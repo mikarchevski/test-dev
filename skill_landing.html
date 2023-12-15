@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="styles/skill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="teleport-landing">
+        <section class="header">
+            <div class="container">
+                <div class="menu">
+
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h1 class="title">
+                    Тур в Абхазию от агентства «Телепорт»
+                </h1>
+                <img src="./img/tour-logo.png" alt="logo" class="logo">
+            <div class="description">
+                <p class="left">
+                    Вас ждёт незабываемая экскурсия на озеро Рица, Юпшарский каньон и водопад Мужские слёзы. 
+                     <span class="bold">Бесплатные дегустации</span> вина, чая и мёда сделают 
+                     отдых ещё приятнее. 
+                </p>
+                <p class="right">
+                    А самые смелые туристы смогут 
+                    <span class="bold">отправиться на&nbsp;сплав</span> по горной реке и полетать на параплане.
+                </p>
+            </div>
+            </div>
+        </section>
+          
+        <section class="request">
+            <div class="container">
+                <div class="form">
+                    <p class="form-desc">
+                        Оставьте заявку и&nbsp;забронируйте тур по&nbsp;минимальной цене!
+                    </p>
+                    
+                    <div class="form-contacts">
+                        <input id = "input-name"type="text" onkeypress="noDigits(event)" pattern="/^[A-Za-z ]+$/.test(x)" required class="name" placeholder="Имя" oninput="rmv(this)">
+                        <input id = "input-phone"type="number" onkeydown="return event.keyCode !==69" required class="phone" placeholder="Телефон" oninput="rmv(this)">
+                        <input id = "input-email"type="email" required class="email" placeholder="Почта" oninput="rmv(this)">
+                        <button id="btn"class="form-btn">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="about">
+                    <ul class="socials">
+                         <li class="socialnetwork">
+                             VK
+                         </li>
+                         <li class="socialnetwork">
+                             tg
+                         </li>
+                    </ul>
+                 </div>
+            </div>
+           
+        </section>
+    </div>
+   
+    <div class="popup__bg">
+        <form class="popup">
+            <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#2982ff" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p id = "label__text" class="label__text"></p>
+        </form>
+    </div>  
+</body>
+<script src="scripts/skillbox.js">
+</script>
+</html>
