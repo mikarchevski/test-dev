@@ -11,26 +11,6 @@ for (let elem of li) {
     }
     if (s=="6"){
         newArr.push(val)
-    }
-    
-    // for (let i=0; i<newArr.length; i++) {
-    //     newArr[i]=="6"?newArr[i]=+elem.innerHTML:val;
-    // }
-    // if (newArr[i]=="6"){
-    //     console.log();
-    // }
 }
 console.log(newArr);
-// for (let i=0; i<newArr.length; i++) {
-//     //console.log(newArr[i]);
-//     if (newArr[i]=="6"){
-//         console.log();
-//     }
-//     //return newArr[i];
-// }
-//console.log( newArr);
-//console.log(li.innerHTML);
-// for (let i=0; i<newArr.length; i++) {
-//         //console.log(newArr[i]);
-//         newArr[i]==6?console.log(li.innerHTML):console.log('-');
-// }
+}
