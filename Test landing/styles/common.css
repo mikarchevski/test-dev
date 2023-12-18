@@ -4,6 +4,10 @@
     color:#fff;
 }
 
+.text-color-dark{
+    color: rgba(0, 43, 69, 1);
+}
+
 .container{
     width: 1640px;
     margin: 0 auto;
@@ -183,7 +187,6 @@
     line-height: 43px;
     letter-spacing: 0em;
     text-align: left;
-    color:rgba(0, 43, 69, 1);
     padding: 6% 0 0 23%;
 
 }
@@ -221,8 +224,159 @@
     line-height: 33px;
     letter-spacing: 0em;
     text-align: left;
-    color: rgba(0, 43, 69, 1);
+ 
+}
+
+.our-works{
+    margin: 158px 0 45px 0;
+}
+
+.our-works__title{
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.our-works__filter{
+    padding: 49px 0 45px 0;
+}
+.our-works__list{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.our-works__list-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.our-works__list-item-slider{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.our-works__list-item-wrap{
+    display: block;
+    position: relative;
+    height: 436px;
+    width: 516px;
+    background-color: rgba(251, 246, 239, 1);
+}
+.our-works__list-item-articles{
+    padding: 0 0 0 194px;
+    width: 457px;
+    height: 436px;
+    display: block;
+    position: absolute;
+    /* left: 54%; */
+    border: 1px solid black;
+    background-color: rgba(251, 246, 239, 1);
+    left: -136px;
+}
+.our-works__list-item-articles-prices-list{
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+
+.our-works__list-item-articles-top{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 60px 0 0 0;
+}
+
+.our-works__list-item-articles-top--bold{
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 -4px 0;
+    display: block;
+}
+
+.our-works__list-item-articles-prices{
+    padding: 45px 0 29px 0;
+}
+
+.our-works__list-item-articles-prices-list-item-name{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.our-works__list-item-articles-prices-list-item-price{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 7px 0 0 0;
+}
+
+.our-works__list-item-size{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(124, 124, 124, 1);
+    padding: 0 0 46px 0;
+
+}
+
+.our-works__list-item-size--bold{
+    font-family: Open Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(124, 124, 124, 1);
+
 }
 
 
 
+.our-works__list-item-articles-details,
+.test-button{
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 18px 32px 18px 32px;
+    border: none;
+    background: rgba(0, 43, 69, 1);
+}
+
+.our-works__list-item-articles-getprice{
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 18px 32px 18px 32px;
+    border: 1px solid;
+}
