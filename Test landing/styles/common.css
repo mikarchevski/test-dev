@@ -22,7 +22,7 @@
     display: block;
     position: relative;
     max-width: 729px;
-    padding: 165px 19px;
+    padding: 165px 19px 133px;
 }
 
 .top-features-text{
@@ -137,7 +137,6 @@
 }
 
 
-
 .top-calculate-price{
     font-family: Open Sans;
     font-size: 14px;
@@ -161,3 +160,69 @@
     border: 1px solid;
     gap: 10px;
 }
+
+.our-adv{
+    display: block;
+    position: relative;
+    background-color: rgba(251, 246, 239, 1);
+    height: 405px;
+}
+.our-adv::before{
+    content: '';
+    background-image: url('../img/kitchen-adv.png');
+    width: 420px;
+    height: 532px;
+    position: absolute;
+    top: -32px
+}
+
+.our-adv__text{
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(0, 43, 69, 1);
+    padding: 6% 0 0 23%;
+
+}
+
+.our-adv__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 45px 0 0 23.7%;
+}
+
+.our-adv__list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.our-adv__list-item-text{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 43, 69, 1);
+    padding: 0 33px 0 0;
+}
+
+.our-adv__list-item-text--bold{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 43, 69, 1);
+}
+
+
+
