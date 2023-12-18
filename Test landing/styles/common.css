@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+}
+
+.container{
+    width: 1640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top{
+    display: block;
+    position: relative;
+    background-image: url('../img/top.jpg');
+    padding-top: 125px;
+    background-repeat: no-repeat;
+}
+
+.top-article{
+    display: block;
+    position: relative;
+    max-width: 729px;
+    padding: 165px 19px;
+}
+
+.top-features-text{
+    display: block;
+    position: relative;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: rgba(0, 43, 69, 0.9);
+    padding: 18px 32px 18px 32px;
+    border-radius: 15px;
+}
+.top-features,
+.top-features-1,
+.top-features-2{
+    display: inline-block;
+    position: relative;
+    height: 86px;
+    position: absolute;
+}
+.top-features{
+    width: 239px;
+    right: 61%;
+    top: 6%;
+}
+.top-features-1{
+    width: 281px;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+}
+.top-features-2{
+    width: 231px;
+    top: 53%;
+    left: 46%;
+}
+.top-features::after,
+.top-features-1::after,
+.top-features-2::after{
+    content: '';
+    background-image: url('../img/marker.png');
+    background-size: 31px;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    z-index: 10;
+    left: 94%;
+    bottom: 31%;
+}
+.top-title{
+    font-family: Lora;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 82px;
+    letter-spacing: 0em;
+}
+.top-title::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 16%;
+    background: #fff;
+    left: -17%;
+    top: 33%;
+}
+
+.top-prices{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 31px;
+    padding: 31px 0 57px;
+}
+
+.top-prices-desc{
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 5px 0 0 0;
+}
+
+.top-prices-quest{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 264px;
+}
+.top-prices-quest::after{
+    content:'';
+    background-image: url('../img/arrow.png');
+    width: 34px;
+    height: 64px;
+    position: absolute;
+    right: -6%;
+    top: 9%;
+}
+.top-prices-desc--bold{
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.top-calculate-price{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 16px
+}
+
+.quest-price{
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    background: none;
+    padding: 18px 32px 18px 32px;
+    border: 1px solid;
+    gap: 10px;
+}
