@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/swiper.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
+    
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="test-landing-page1">
@@ -125,12 +127,36 @@
                     </button>
                 </div>
                 <ul class="our-works__list">
-                    
-                   
                     <li class="our-works__list-item">
-                        <div class="our-works__list-item-slider">
-                            <img src="img/rectangle_kitchen.png" alt="кухня" class="slidertemp">
-                        </div>
+                         <!--Slider main container -->
+                         <div class="our-works-slider">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img class="swipre-main-img" src="img/rectangle_kitchen.png"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img class="swipre-main-img" src="img/rectangle_kitchen.png"/>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-navigation">
+                                <div class="swiper-pagination swiperNav-pagination"></div>
+                              <img class="swiper-button-next" src="img/toRight.png"><img>
+                              <img class="swiper-button-prev" src="img/toLeft.png"><img>
+                              </div>
+                              <div thumbsSlider="" class="swiper mySwiper swiperNav">
+                                <div class="swiper-wrapper swiperNaw-img-list">
+                                  <div class="swiper-slide">
+                                    <img class = "swiperNav-img" src="img/rectangle_kitchen.png" />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img class = "swiperNav-img" src="img/rectangle_kitchen.png" />
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                         </div>
                         <div class="our-works__list-item-wrap">
                             <div class="our-works__list-item-articles">
                                 <p class="our-works__list-item-articles-top text-color-dark">
@@ -182,61 +208,148 @@
 
 
                     <li class="our-works__list-item">
-                        <div class="our-works__list-item-slider">
-                            <img src="img/rectangle_kitchen.png" alt="кухня" class="slidertemp">
+                        <!--Slider main container -->
+                        <div class="our-works-slider">
+                           <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper4">
+                               <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                   <img class="swipre-main-img" src="img/rectangle_kitchen.png"/>
+                                 </div>
+                                 <div class="swiper-slide">
+                                   <img class="swipre-main-img" src="img/rectangle_kitchen.png"/>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="swiper-navigation1">
+                                <div class="swiper-pagination1 swiperNav-pagination"></div>
+                                <img class="swiper-button-next1" src="img/toRight.png"><img>
+                                <img class="swiper-button-prev1" src="img/toLeft.png"><img>
+                             </div>
+                             <div thumbsSlider="" class="swiper mySwiper3 swiperNav">
+                               <div class="swiper-wrapper swiperNaw-img-list">
+                                 <div class="swiper-slide">
+                                   <img class = "swiperNav-img" src="img/rectangle_kitchen.png" />
+                                 </div>
+                                 <div class="swiper-slide">
+                                   <img class = "swiperNav-img" src="img/rectangle_kitchen.png" />
+                                 </div>
+                                 
+                               </div>
+                             </div>
                         </div>
-                        <div class="our-works__list-item-wrap">
-                            <div class="our-works__list-item-articles">
-                                <p class="our-works__list-item-articles-top text-color-dark">
-                                    <span class="our-works__list-item-articles-top--bold text-color-dark">Кухня 097 минимализм </span>        
-                                    <br>Угловая белая кухня со столешницей под бетон.
-                                </p>
-                                <div class="our-works__list-item-articles-prices">
-                                    <ul class="our-works__list-item-articles-prices-list">
-                                        <li class="our-works__list-item-articles-prices-list-item">
-                                            <p class="our-works__list-item-articles-prices-list-item-name text-color-dark">
-                                                эконом
-                                            </p>
-                                            <p class="our-works__list-item-articles-prices-list-item-price text-color-dark">
-                                                123 000 р
-                                            </p>
-                                        </li>
-                                        <li class="our-works__list-item-articles-prices-list-item">
-                                            <p class="our-works__list-item-articles-prices-list-item-name text-color-dark">
-                                                стандарт
-                                            </p>
-                                            <p class="our-works__list-item-articles-prices-list-item-price text-color-dark">
-                                                123 000 р
-                                            </p>
-                                        </li>
-                                        <li class="our-works__list-item-articles-prices-list-item">
-                                            <p class="our-works__list-item-articles-prices-list-item-name text-color-dark">
-                                                премиум
-                                            </p>
-                                            <p class="our-works__list-item-articles-prices-list-item-price text-color-dark">
-                                                123 000 р
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="our-works__list-item-size">
-                                   <span class="our-works__list-item-size--bold">Длина кухни:</span>   4900 мм
-                                </p>
-                                <div class="our-works__list-item-buttons-wrap"></div>
-                                <button class="our-works__list-item-articles-details">
-                                    подробнее
-                                </button>
-                                <button class="our-works__list-item-articles-getprice text-color-dark">
-                                    расчёт стоимости
-                                </button>
-                            </div>
-                            
-                        </div>
-                    </li>
+                       <div class="our-works__list-item-wrap">
+                           <div class="our-works__list-item-articles">
+                               <p class="our-works__list-item-articles-top text-color-dark">
+                                   <span class="our-works__list-item-articles-top--bold text-color-dark">Кухня 097 минимализм </span>        
+                                   <br>Угловая белая кухня со столешницей под бетон.
+                               </p>
+                               <div class="our-works__list-item-articles-prices">
+                                   <ul class="our-works__list-item-articles-prices-list">
+                                       <li class="our-works__list-item-articles-prices-list-item">
+                                           <p class="our-works__list-item-articles-prices-list-item-name text-color-dark">
+                                               эконом
+                                           </p>
+                                           <p class="our-works__list-item-articles-prices-list-item-price text-color-dark">
+                                               123 000 р
+                                           </p>
+                                       </li>
+                                       <li class="our-works__list-item-articles-prices-list-item">
+                                           <p class="our-works__list-item-articles-prices-list-item-name text-color-dark">
+                                               стандарт
+                                           </p>
+                                           <p class="our-works__list-item-articles-prices-list-item-price text-color-dark">
+                                               123 000 р
+                                           </p>
+                                       </li>
+                                       <li class="our-works__list-item-articles-prices-list-item">
+                                           <p class="our-works__list-item-articles-prices-list-item-name text-color-dark">
+                                               премиум
+                                           </p>
+                                           <p class="our-works__list-item-articles-prices-list-item-price text-color-dark">
+                                               123 000 р
+                                           </p>
+                                       </li>
+                                   </ul>
+                               </div>
+                               <p class="our-works__list-item-size">
+                                  <span class="our-works__list-item-size--bold">Длина кухни:</span>   4900 мм
+                               </p>
+                               <div class="our-works__list-item-buttons-wrap"></div>
+                               <button class="our-works__list-item-articles-details">
+                                   подробнее
+                               </button>
+                               <button class="our-works__list-item-articles-getprice text-color-dark">
+                                   расчёт стоимости
+                               </button>
+                           </div>
+                           
+                       </div>
+                   </li>
                     
+               
                 </ul>
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' '+
+                '<span class="' + totalClass + '"></span>';
+        },
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+    var swiper3 = new Swiper(".mySwiper3", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper4 = new Swiper(".mySwiper4", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next1",
+        prevEl: ".swiper-button-prev1",
+      },
+      pagination: {
+        el: ".swiper-pagination1",
+        type: "fraction",
+        renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' '+
+                '<span class="' + totalClass + '"></span>';
+        },
+      },
+      thumbs: {
+        swiper: swiper3,
+      },
+    });
+    
+   
+  </script>
 </body>
+
 </html>

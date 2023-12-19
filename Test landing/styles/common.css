@@ -433,3 +433,11 @@ color: rgba(124, 124, 124, 1);
     border: 1px solid;
     margin: 0 0 0 12px;
 }
+
+
+.our-works-slider{
+    display: block;
+    position: relative;
+    max-width: 287px;
+    height: 366px
+}
