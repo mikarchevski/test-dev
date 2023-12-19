@@ -1,0 +1,161 @@
+
+@media (max-width:1730px){
+    .container{
+        width: 1320px;
+    }
+    .our-adv{
+        height: 20%;
+    }
+    .our-adv__img{
+        width:20%;
+    }
+
+    .our-adv__text{
+        font-size: 1.75rem;
+        padding: 4.2% 0 0 20%;
+    }
+
+    .our-adv__list{
+        padding: 40px 0 6% 20%;
+    }
+    .our-adv__list-item{
+        gap:14px;
+    }
+    .our-adv__list-item-text,
+    .our-adv__list-item-text--bold{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .our-adv__list-item-ico{
+        width: 56px;
+    }
+}
+
+@media(max-width:1400px){
+    .container{
+        width: 1140px;
+    }
+    .yandex-rate{
+        display: none;
+    }
+    .top-title{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .top-prices-desc,
+    .top-prices-desc--bold{
+        font-size: 1.2rem;
+    }
+    .wallet{
+        width: 54px;
+    }
+}
+
+@media (max-width:1200px){
+    .container{
+        width: 960px;
+    }
+    .header-content-1{
+        padding: 6px 0 0 0;
+    }
+
+    .top-article{
+        width: 63%;
+    }
+    .top-features-text{
+        font-size: 0.85rem;
+        line-height: 1.1rem;
+        padding: 7px 14px;
+    }
+    .top-features,
+    .top-features-1,
+    .top-features-2{
+        height: 49px;
+    }
+    .top-features::after,
+    .top-features-1::after,
+    .top-features-2::after{
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+    }
+    .top-features {
+        width: 149px;
+        right: 0;
+        top: 12%;
+    }
+    .top-features-1{
+        width: 195px;
+        top: 35.1%;
+    }
+    .top-features-2 {
+        width: 158px;
+        right: -46%;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        width: 720px;
+    }
+
+    .header-logo{
+        width: 150px;
+        padding-right: 0;
+    }
+    .action-btn{
+        display: none;
+    }
+    .social-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .phone-content{
+        font-size: 13px;
+    }
+    .top{
+        background-size: cover;
+    }
+    .top-title{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .top-prices-desc,
+    .top-prices-desc--bold{
+        font-size: 0.85rem;
+    }
+    .wallet{
+        width: 54px;
+    }
+
+    
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .header-content-2{
+        flex-direction: column-reverse;
+    }
+    .header-title,
+    .header-title--bold{
+        margin: 0;
+        font-size: 13px;
+    }
+    .header-content__social-nt{
+        display: none !important;
+    }
+    .phone-content{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:576px){
+    .header-logo{
+        width: 100px;
+        padding-right: 0;
+    }
+}

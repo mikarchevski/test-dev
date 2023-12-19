@@ -3,7 +3,9 @@
     padding: 0;
     color:#fff;
 }
-
+html{
+    font-size: 16px;
+}
 .text-color-dark{
     color: rgba(0, 43, 69, 1);
 }
@@ -168,19 +170,25 @@
 }
 
 .our-adv{
-    display: block;
+    display: flex;
     position: relative;
     background-color: rgba(251, 246, 239, 1);
     height: 405px;
 }
-.our-adv::before{
+.our-adv__img{
+    width: 420px;
+    height: auto;
+    position: absolute;
+    top: -38px;
+}
+/* .our-adv::before{
     content: '';
     background-image: url('../img/kitchen-adv.png');
     width: 420px;
     height: 532px;
     position: absolute;
     top: -38px;
-}
+} */
 
 .our-adv__text{
     display: block;
@@ -196,7 +204,6 @@
 
 .our-adv__text::after{
     position: absolute;
-    content: "";
     height: 1px;
     width: 61%;
     background: rgba(0, 43, 69, 1);
@@ -214,7 +221,7 @@
 
 .our-adv__list-item{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
     flex: 1 1 375px;
@@ -235,7 +242,7 @@
     margin: 0 0 10px 8px;
 }
 .ico-3{
-    margin: 10px 0 0 -7px;
+    margin: 0 0 0 -7px;
 }
 
 .our-adv__list-item-text{
@@ -246,7 +253,6 @@
     line-height: 33px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 14px 0 0 0;
 }
 
 .our-adv__list-item-text--bold{
