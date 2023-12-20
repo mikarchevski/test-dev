@@ -176,3 +176,23 @@
     justify-content: center;
     color: var(--swiper-navigation-color,var(--swiper-theme-color));
 }
+
+@media (max-width: 992px){
+  .swiperNav{
+    width:142px;
+  }
+
+  .swiperNaw-img-list, .swiperNaw-img-list1{
+    width: 142px !important;
+  }
+}
+
+@media (max-width: 768px){
+  .swiperNav{
+    width:194px;
+  }
+
+  .swiperNaw-img-list, .swiperNaw-img-list1{
+    width: 194px !important;
+  }
+}
