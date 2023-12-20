@@ -23,6 +23,7 @@ html{
     padding-top: 125px;
     padding-bottom: 5px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top-article{
@@ -95,9 +96,9 @@ html{
     position: absolute;
     content: "";
     height: 1px;
-    width: 16%;
+    width: 41%;
     background: #fff;
-    left: -17%;
+    left: -40%;
     top: 34.7%;
 }
 

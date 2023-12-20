@@ -131,6 +131,10 @@
         line-height: 2.5rem;
     }
 
+    .top-title::before{
+        top: 32%;
+    }
+
     .top-prices-desc,
     .top-prices-desc--bold{
         font-size: 0.85rem;
@@ -193,6 +197,20 @@
         margin: 0;
         font-size: 13px;
     }
+    .top-article{
+        width: auto;
+        padding: 0;
+        margin: 67px 0 70px 62px;
+    }
+    .top-features,
+    .top-features-1,
+    .top-features-2{
+        display: none;
+    }
+
+    .top-title::before{
+        content: none;
+    }
     .header-content__social-nt{
         display: none !important;
     }
@@ -211,16 +229,19 @@
     .our-works-slider{
         width: 287px;
     }
+    .our-works__list{
+        display: block;
+    }
     .our-works__list-item{
         flex-direction: column-reverse;
     }
     .our-works__list-item-wrap {
-        width: 320px;
+        width: 100%;
         height: 450px;
         background: none  ;
     }
     .our-works__list-item-articles{
-        width: 320px;
+        width: 100%;
         height: 450px;
         padding: 0;
         left: 0;
@@ -232,9 +253,11 @@
     .our-works__list-item-articles-top,
     .our-works__list-item-articles-top--bold {
         font-size: 1rem;
+        text-align: center;
     }
     .our-works__list-item-size{
         padding: 0 0 21px 4px;
+        text-align: center;
     }
     
     .our-works__list-item-articles-prices{
