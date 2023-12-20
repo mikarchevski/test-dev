@@ -10,6 +10,16 @@ html{
     color: rgba(0, 43, 69, 1);
 }
 
+.button-dark:hover{
+    background: rgba(1, 91, 145, 1);
+
+}
+
+.button-light:hover{
+    border: 1px solid rgba(242, 162, 46, 1);
+    color: rgba(242, 162, 46, 1);
+}
+
 .container{
     width: 1640px;
     margin: 0 auto;
@@ -401,13 +411,12 @@ html{
 
 .our-works__list-item-size--bold{
     font-family: Open Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(124, 124, 124, 1);
-
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(124, 124, 124, 1);
 }
 
 .our-works__list-item-buttons-wrap{
