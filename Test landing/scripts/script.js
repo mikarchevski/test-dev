@@ -55,14 +55,20 @@ let body = document.querySelector('body');
 let wrap = document.querySelector('.popup-wrap');
 let openPopupButtons = document.querySelectorAll('.form-btn');
 
+
 function popupToggle(){
   
   body.classList.toggle('no-scroll');
   popup.classList.toggle('active');
   wrap.classList.toggle('popup-wrap--active');
-  clearInputs();
+  // clearInputs();
 }
 
+wrap.onclick = function(e){
+  body.classList.toggle('no-scroll');
+  popup.classList.toggle('active');
+  wrap.classList.toggle('popup-wrap--active');
+}
 document.getElementById("popup-submit").onclick = function(e){
   let name = document.getElementById("input-name").value;
   document.getElementById("label__text").innerText = name + " спасибо за проявленный инетрес";
