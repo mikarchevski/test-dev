@@ -65,6 +65,20 @@
     .container{
         width: 960px;
     }
+    .header-logo{
+        width: 150px;
+        padding-right: 0;
+    }
+    .action-btn{
+        display: none;
+    }
+    .social-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .phone-content{
+        font-size: 13px;
+    }
     .header-content-1{
         padding: 6px 0 0 0;
     }
@@ -109,19 +123,8 @@
         width: 720px;
     }
 
-    .header-logo{
-        width: 150px;
-        padding-right: 0;
-    }
-    .action-btn{
-        display: none;
-    }
-    .social-icon{
-        width: 24px;
-        height: 24px;
-    }
-    .phone-content{
-        font-size: 13px;
+    .socials{
+        padding: 0 0 0 21px;
     }
     .top{
         background-size: cover;
@@ -129,6 +132,7 @@
     .top-title{
         font-size: 1.5rem;
         line-height: 2.5rem;
+        padding: 0 122px 0 0;
     }
 
     .top-title::before{
@@ -141,6 +145,9 @@
     }
     .wallet{
         width: 54px;
+    }
+    .our-adv__text{
+        padding: 4.2% 0 0 25%;
     }
     .our-adv__img{
         width: 39%;
@@ -187,10 +194,12 @@
 
 @media (max-width: 768px){
     .container{
-        width: 100%;
+        width: 95%;
     }
     .header-content-2{
         flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 10px;
     }
     .header-title,
     .header-title--bold{
@@ -200,7 +209,7 @@
     .top-article{
         width: auto;
         padding: 0;
-        margin: 67px 0 70px 62px;
+        margin: 67px 0 70px 52px;
     }
     .top-features,
     .top-features-1,
@@ -211,9 +220,7 @@
     .top-title::before{
         content: none;
     }
-    .header-content__social-nt{
-        display: none !important;
-    }
+   
     .phone-content{
         font-size: 16px;
     }
@@ -291,8 +298,23 @@
 }
 
 @media(max-width:576px){
+    .top-title{
+        padding: 0;
+    }
     .header-logo{
         width: 100px;
         padding-right: 0;
+    }
+     .header-content__social-nt{
+        display: none !important;
+    }
+    .our-works {
+        margin: 64px 0 45px 0;
+    }
+}
+
+@media (max-width:940px) and (orientation:landscape) {
+    .container{
+        width: 90%;
     }
 }

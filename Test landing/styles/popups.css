@@ -124,3 +124,23 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width:425px){
+    .name,
+    .phone,
+    .email{
+        width: 290px;
+    }
+}
+
+@media (max-height:515px){
+    #popup{
+        padding: 11px 25px 11px;
+    }
+    .popup-title {
+        font-size: 1rem;
+    }
+    .popup-content {
+
+        gap:10px;}
+}
