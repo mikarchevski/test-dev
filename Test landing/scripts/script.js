@@ -61,13 +61,13 @@ function popupToggle(){
   body.classList.toggle('no-scroll');
   popup.classList.toggle('active');
   wrap.classList.toggle('popup-wrap--active');
-  // clearInputs();
+  clearInputs();
+  
 }
 
 wrap.onclick = function(e){
-  body.classList.toggle('no-scroll');
-  popup.classList.toggle('active');
-  wrap.classList.toggle('popup-wrap--active');
+  popupToggle();
+  removePopup();
 }
 document.getElementById("popup-submit").onclick = function(e){
   let name = document.getElementById("input-name").value;
@@ -99,7 +99,6 @@ function clearInputs(){
 const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
 const input = document.getElementById('input-email');
-console.log(input);
 
 function onInput() {
   if (isEmailValid(input.value)) {

@@ -4,12 +4,13 @@
     left: 50%;/*позиция окна слева*/
     transform: translate(-50%,-50%);
     z-index: 1000;/*на верхний слой*/
-    background: #fff;
+    background-color: rgba(251, 246, 239, 1);
     width: 450px;
     padding: 80px 50px 50px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.08);
     transition: 0.5s;
-    visibility: hidden;/*скрываем окно*/
+    visibility: hidden;
+    border-radius: 10px;
 }
 
 .popup-title{
@@ -24,13 +25,14 @@
     visibility: visible;/*показываем окно*/
     top: 50%;/*окно выдвигается сверху*/
 }
-#popup .content{
+.popup-content{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;/*направление главной оси*/
+    flex-direction: column;
+    gap: 15px;
 }
 #popup .content .inputBox{
     position: relative;
@@ -47,36 +49,12 @@
     outline: none;
     font-size: 18px;
 }
-#popup .content .inputBox input[type="submit"]{
-    max-width: 150px;
-    background: #E57373;
-    color: #fff;    
-    border: none;
-}
 .close{
     position: absolute;
     top: 30px;
     right: 30px;
     cursor: pointer;
 }
-
-
-
-/* .btn{
-    position: relative;
-    padding: 15px 20px;
-    background: #fff;
-    font-size: 18px;
-    display: inline-block;
-    text-decoration: none;
-    color: #E57373;
-    cursor: pointer;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.5s;
-} */
-
 
 .no-scroll{
     overflow: hidden;
@@ -119,4 +97,30 @@
     border: 1px;
     gap: 10px;
     background: rgba(255, 255, 255, 1);
+}
+
+.popup-closeBtn{
+    width: 15px;
+    filter: invert(12%) sepia(38%) saturate(2998%) hue-rotate(178deg) brightness(94%) contrast(101%);
+}
+
+.form-contacts{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+@media (max-width:650px){
+    .name,
+    .phone,
+    .email{
+        width: 315px;
+    }
+    #popup{
+        width: 320px;
+        padding: 80px 0 0 0;
+    }
+    .popup-title {
+        font-size: 1rem;
+    }
 }
