@@ -1,0 +1,114 @@
+@import url(header.scss);
+@import url(meadia.scss);
+
+*{
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.container{
+    width: 1640px;
+    margin: 0 auto;
+}
+.gold-text{
+    color: #E5C97B;
+}
+.white-text{
+    color: #FFFFFF;
+}
+.black-text{
+   color: #000000;
+}
+.dark-text{
+    color: #333333;
+}
+.gray-text{
+    color: #D9D9D9;
+}
+
+.top{
+    background: #010E0F;    
+    &__wrap{
+        display: block;
+    position: relative;
+    text-align: center;
+    background-image: url('../img/back.svg');
+    }
+    &__about{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        &-play{
+
+        }
+    }
+    &__article{
+        &-title{
+            display: block;
+            position: relative;
+            font-family: Oranienbaum;
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 4.78rem;
+            letter-spacing: 0.05em;
+        }
+        &-subtitle{
+                      
+            font-family: Noto Sans;
+            font-size: 2.14rem;
+            font-weight: 400;
+            line-height: 2.78rem;
+            letter-spacing: 0em;
+            &--bold{
+                font-family: Noto Sans;
+                font-size: 2.14rem;
+                font-weight: 700;
+                line-height: 2.78rem;
+                letter-spacing: 0em;
+            }
+        }
+        &-booking{
+            display: inline-block;
+            position: relative;
+            width: 374px;
+            &:after{
+                content: "";
+                position: absolute;
+                background-image: url("../img/arrow-left.png");
+                background-size: 123px;
+                height: 123px;
+                width: 123px;
+                bottom: -7%;
+                left: 96%;
+                background-repeat: no-repeat;
+            }
+            &-btn{
+                background: linear-gradient(90deg, #67310A -108.98%, #F0D683 129.77%);
+                width: 263px;
+                height: 68px;
+                border-radius: 10px;
+                border: 0;
+                
+                &-text{
+                    display: inline-block;
+                    padding: 18px 32px;
+                    border-radius: 8px;
+                    text-transform: uppercase;
+                    font-family: Oranienbaum;
+                    font-size: 1.42rem;
+                    font-weight: 400;
+                    line-height: 1.72rem;
+                    letter-spacing: 0.05em;
+                    border: 1px solid transparent;
+                    background: linear-gradient(90deg, #67310A -108.98%, #F0D683 129.77%) padding-box, 
+                    linear-gradient(272.85deg, #9F734C 3.66%, #F0D683 100.19%) border-box;
+                }
+                
+            }
+            &-description{
+
+            }
+        }
+    }
+}

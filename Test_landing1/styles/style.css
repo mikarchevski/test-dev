@@ -1,0 +1,37 @@
+@import url(header.css);
+@import url(meadia.css);
+@import url(common.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1640px;
+}
+
+.gold-text {
+  color: #E5C97B;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.black-text {
+  color: #000000;
+}
+
+.dark-text {
+  color: #333333;
+}
+
+.gray-text {
+  color: #D9D9D9;
+}
+
+.top {
+  background-image: url("../img/back.svg");
+}
+
+/*# sourceMappingURL=style.css.map */

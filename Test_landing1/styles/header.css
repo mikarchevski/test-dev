@@ -1,0 +1,88 @@
+.header {
+  background-color: #010E0F;
+}
+.header__content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0 24px;
+}
+.header__content-left {
+  display: flex;
+  align-items: center;
+}
+.header__content-left-logo-link {
+  display: block;
+  position: relative;
+  margin: 0 25px 0 0;
+}
+.header__content-left-logo-link-img {
+  width: 199px;
+  height: auto;
+}
+.header__content-left-title {
+  font-family: Noto Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header__content-right {
+  display: flex;
+  align-items: center;
+}
+.header__content-right-email {
+  display: block;
+  font-family: Noto Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.42rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header__content-right-email-mailto {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px dashed #F0D683;
+}
+.header__content-right-social {
+  display: inline-block;
+  margin: 0 74px;
+}
+.header__content-right-social-link {
+  display: block;
+  float: left;
+  font-size: 0;
+}
+.header__content-right-social-link-ico {
+  width: 40px;
+  height: auto;
+}
+.header__content-right-social-link:nth-child(2) {
+  margin: 0 20px;
+}
+.header__content-right-phone {
+  display: inline-block;
+}
+.header__content-right-phone-number {
+  display: block;
+  text-decoration: none;
+  font-family: Oranienbaum;
+  font-size: 1.42rem;
+  font-weight: 400;
+  line-height: 1.71rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.header__content-right-phone-getcall {
+  display: block;
+  float: right;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed #F0D683;
+  line-height: 1.3rem;
+}
+
+/*# sourceMappingURL=header.css.map */
