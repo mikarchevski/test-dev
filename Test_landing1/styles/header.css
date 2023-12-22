@@ -6,7 +6,7 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 0 24px;
+  padding: 0 59px 20px 76px;
 }
 .header__content-left {
   display: flex;
@@ -15,7 +15,7 @@
 .header__content-left-logo-link {
   display: block;
   position: relative;
-  margin: 0 25px 0 0;
+  padding: 26px 25px 0 0;
 }
 .header__content-left-logo-link-img {
   width: 199px;
@@ -28,6 +28,7 @@
   line-height: 1.3rem;
   letter-spacing: 0em;
   text-align: left;
+  padding-top: 16px;
 }
 .header__content-right {
   display: flex;
