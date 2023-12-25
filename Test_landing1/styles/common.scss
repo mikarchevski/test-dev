@@ -1,6 +1,3 @@
-@import url(header.scss);
-@import url(meadia.scss);
-
 *{
     margin:0;
     padding: 0;
@@ -234,8 +231,12 @@
     &__achievements{
         display: block;
         position: absolute;
-        top: -12%;
-        left: 10%;
+        width: 1501px;
+        margin-left: auto;
+        margin-right: auto;
+        top:-12%;
+        left: 0;
+        right: 0;
         background: #010E0F;
         border-radius: 41px;
         padding: 10px;
@@ -253,6 +254,9 @@
             border: 2px solid transparent;
             border-radius: 35px;
             padding: 38px 0 48px 39px;
+            &-1,&-2{
+                display: flex;
+            }
             &-item{
                 display: inline-block;
                 position: relative;
@@ -285,7 +289,8 @@
     }
 
     &__title{
-        display: inline-block;
+        display: block;
+        position: relative;
         font-family: Oranienbaum;
         font-size: 40px;
         font-weight: 400;
@@ -421,18 +426,7 @@
                     bottom: -194px;
                 }
             }
-            &::after{
-                content: '';
-                display: block;
-                position: absolute;
-                background-image: url('../img/right-sofa.png');
-                width: 934px;
-                height: 258px;
-                background-size: 937px;
-                background-repeat: no-repeat;
-                left: -44px;
-                bottom: -101px;
-            }
+            
             &::before{
                 content: '';
                 display: block;
@@ -454,6 +448,7 @@
         border-radius: 200px;
         align-items: center;
         margin: 0 auto;
+        z-index: 1;
         &-desc{
             display: inline-block;
             position: relative;
@@ -468,6 +463,18 @@
                 padding: 0 14px 0 0;
             }
         }
+    }
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('../img/right-sofa.png');
+        width: 934px;
+        height: 258px;
+        background-size: 937px;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: 73px;
     }
 }
 
@@ -549,6 +556,9 @@
         position: relative;
         align-items: flex-start;
         justify-content: space-between;
+        &-mobile{
+            display: none;;
+        }
         &-left{
             display: block;
             position: relative;
@@ -742,3 +752,4 @@
         }
     }
 }
+

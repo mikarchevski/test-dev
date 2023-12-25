@@ -1,3 +1,242 @@
-
+@media (max-width: 1730px) {
+  .container {
+    width: 1320px;
+  }
+  .top__about {
+    left: -25%;
+  }
+  .top__decoration-delivery {
+    right: 0;
+  }
+  .top__decoration-sofa {
+    width: 100%;
+  }
+  .pros {
+    padding: 285px 0 76px 0;
+  }
+  .pros__achievements {
+    width: 90%;
+    top: -7%;
+  }
+  .pros__achievements-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pros__achievements-list-item-num {
+    font-size: 4rem;
+    font-size: 4.5rem;
+  }
+  .pros__achievements-list-item:not(:last-child) {
+    padding-right: 14px;
+  }
+  .pros__compare-positive-list::after {
+    width: 253px;
+    height: 79px;
+    background-size: 296px;
+    right: 23%;
+    bottom: 31px;
+  }
+  .pros__compare-positive::before {
+    width: 126px;
+    height: 174px;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    right: 1%;
+    bottom: 3px;
+    z-index: 1;
+  }
+  .pros__compare-negative::before {
+    width: 196px;
+    height: 202px;
+    background-size: 255px;
+    bottom: 36px;
+    right: 475px;
+  }
+  .pros__compare-negative::after {
+    width: 500px;
+    background-size: 500px;
+    height: 151px;
+    bottom: 0;
+    right: 76px;
+  }
+  .pros::after {
+    background-image: url("../img/right-sofa1.png");
+    width: 500px;
+    background-size: 500px;
+    height: 140px;
+    bottom: 184px;
+    right: 15%;
+  }
+  .tour__process-list-item-num-1::after, .tour__process-list-item-num-2::after, .tour__process-list-item-num-3::after {
+    background-size: 60%;
+  }
+  .tour__process-list-item-num-4::before, .tour__process-list-item-num-5::before {
+    background-size: 60%;
+    right: -90%;
+  }
+  .tour__desc-img {
+    width: 400px;
+  }
+  .tour__desc:before {
+    width: 380px;
+    height: 380px;
+  }
+  .tour__desc:after {
+    width: 500px;
+    height: 500px;
+    top: -25px;
+    left: -14px;
+  }
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+  .header__content {
+    padding: 0 0 19px 0;
+  }
+  .header__content-left-logo-link-img {
+    width: 130px;
+  }
+  .header__content-left-title {
+    font-size: 0.85rem;
+  }
+  .header__content-right-social {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .top__about {
+    left: -11%;
+  }
+  .top__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 41px 0 44px;
+    width: 100%;
+  }
+  .top__article-title {
+    font-size: 2rem;
+    line-height: 2.78rem;
+  }
+  .top__article-subtitle, .top__article-subtitle--bold {
+    font-size: 1.5rem;
+    line-height: 2.14rem;
+  }
+  .top__decoration-delivery {
+    width: 218px;
+    height: 264px;
+  }
+  .top__decoration-delivery-wrap {
+    padding: 44px 22px 95px 27px;
+  }
+  .pros__achivements {
+    top: -7%;
+  }
+  .pros__compare {
+    flex-direction: column;
+  }
+  .pros__compare-positive, .pros__compare-negative {
+    width: 630px;
+    margin-bottom: 25px;
+  }
+  .pros__compare-positive {
+    right: 0;
+  }
+  .pros__compare-positive-list::after {
+    right: 28%;
+    bottom: 20px;
+  }
+  .pros:after {
+    bottom: 198px;
+    right: 32%;
+  }
+  .tour {
+    padding: 62px 0 83px 0;
+  }
+  .tour__desc {
+    display: none;
+    position: absolute;
+    top: unset;
+    bottom: -53%;
+  }
+  .tour__process-mobile {
+    display: block;
+    position: relative;
+  }
+  .tour__process-list-item {
+    width: 100%;
+  }
+  .tour__process-list-item-mobile-left {
+    text-align: left;
+  }
+  .tour__process-list-item-mobile-right {
+    text-align: right;
+  }
+  .tour__process-left, .tour__process-right {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .header__content-right-social, .header__content-right-email {
+    display: none;
+  }
+  .pros {
+    padding: 35px 0 76px 0;
+  }
+  .pros__achievements {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  .pros__title {
+    padding: 0;
+  }
+  .pros__compare-positive, .pros__compare-negative {
+    width: 100%;
+  }
+  .pros__compare-positive-title, .pros__compare-negative-title {
+    width: 80%;
+  }
+  .pros__compare-positive-list, .pros__compare-negative-list {
+    width: 80%;
+  }
+  .top__about {
+    position: relative;
+    left: 0;
+    margin-bottom: 25px;
+  }
+  .top__about-play {
+    margin: 15px;
+  }
+  .top__about-play-btn {
+    width: 50px;
+  }
+  .top__about-play-desc {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .top__wrap {
+    padding-bottom: 50px;
+  }
+  .top__article {
+    padding: 41px 0 60px;
+  }
+  .top__decoration-delivery {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
 
 /*# sourceMappingURL=meadia.css.map */
