@@ -27,7 +27,7 @@
                 &-item{
                     &-num{
                         font-size: 4rem;
-                        font-size: 4.5rem;
+                        line-height: 4.5rem;
                     }
                     
                     &:not(:last-child){
@@ -141,6 +141,15 @@
             &-right{
                 &-social{
                     margin: 0 30px;
+                }
+            }
+        }
+    }
+    .pros{
+        &__achievements{
+            &-list{
+                &-item:last-child{
+                    padding: 0;
                 }
             }
         }
@@ -263,13 +272,29 @@
             position: relative;
             width: 100%;
             padding: 0;
+            &-list{
+                &-item{
+                    &-num{
+                        font-size: 3rem;
+                        line-height: 3.5rem;
+                    }
+                    &-desc{
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                    }
+                }
+            }
         }
         &__title{
-            padding: 0;
+            font-size: 1.5rem;
+            line-height: 1.75;
+            padding: 25px 0;
+            margin: 0;
         }
         &__compare{
             &-positive,&-negative{
                 width: 100%;
+                height: auto;
                 &-title{
                     width: 80%;
                 }
@@ -315,6 +340,109 @@
 
 @media (max-width: 768px){
     .container{
-        width: 95%;
+        width: 100%;
+    }
+    .header,.pros,.tour{
+        padding: 0 10px;
+    }
+    .pros{
+        padding: 35px 10px 50px 10px;
+        &::after{
+            content: none;
+        }
+        &__compare{
+            &-negative{
+                &::after{
+                    content: none;
+                }
+                &::before{
+                    content: none;
+                }
+            }
+            &-positive{
+                &::before{
+                     content: none;
+                }
+                &-list{
+                   &::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+    .tour{
+        padding:0 10px 25px
+    }
+}
+
+@media (max-width:525px){
+    .header{
+        &__content{
+            &-left{
+                &-title{
+                    display: none;
+                }
+            }
+            &-right{
+                &-social{
+                    &-link{
+                        &-ico{
+                            width: 30px;
+                        }
+                        &:nth-child(2){
+                            margin:0 0 0 10px;
+                        }
+                    }
+                   
+                }
+                &-phone{
+                    &-number{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .top{
+        &__article{
+            &-booking{
+                width: 90%;
+                &::after{
+                    content: none;
+                }
+            }
+        }
+        &__decoration{
+            overflow: hidden;
+            padding: 0;
+            &-sofa{
+                width: 200%;
+            }
+        }
+    }
+    .pros{
+        &__achievements{
+            &-list{
+                padding: 38px 0 48px 0;
+                &-item:not(:last-child){
+                    padding: 0 0 10px 0;
+                }
+            }
+        }
+        &__compare{
+            &-positive,
+            &-negative{
+                height: auto;
+            }
+        }
+        &__consult{
+            &-desc{
+                padding: 14px 14px 14px 27px;
+                &-socials{
+                    display: flex;
+                }
+            }
+        }
     }
 }
