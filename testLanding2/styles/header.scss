@@ -1,0 +1,75 @@
+.header{
+    background: #000000;
+    padding: 27px 0;
+    &__desktop{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        &-logo{
+            width: 173px;
+            height: 40px;
+            margin-right: Min(174px, calc((100vw / 6) - 142px));
+            &-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-menu{
+            &-list{
+                display: flex;
+                position: relative;
+                list-style: none;
+                margin-right: auto;
+                &-item{
+                    display: inline-block;
+                    position: relative;
+                    &-link{
+                        color:#FFFFFF;
+                        text-decoration: none;
+                        border: none;
+                        font-weight: 600;
+                        font-size: 1.8em;
+                        line-height: 2.5em;
+                        
+                    }
+                    &::first-letter{
+                        text-transform: capitalize;
+                    }
+                    &:not(:last-child){
+                        padding-right: 59px;
+                    }
+                }
+            }
+        }
+        &-sigin{
+            display: inline-block;
+            position: relative;
+            border: none;
+            background: none;
+            font-size: 1.8em;
+            &::first-letter{
+                text-transform: capitalize;
+            }
+            &::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                background-image: url('../img/sigin.svg');
+                left: -22px;
+                bottom: 5px;
+                width: 13px;
+                height: 13px;
+                background-size: 13px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    &__mobile{
+        display: none;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+}

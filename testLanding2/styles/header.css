@@ -1,0 +1,73 @@
+.header {
+  background: #000000;
+  padding: 27px 0;
+}
+.header__desktop {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header__desktop-logo {
+  width: 173px;
+  height: 40px;
+  margin-right: min(174px, 16.6666666667vw - 142px);
+}
+.header__desktop-logo-img {
+  width: 100%;
+  height: 100%;
+}
+.header__desktop-menu-list {
+  display: flex;
+  position: relative;
+  list-style: none;
+  margin-right: auto;
+}
+.header__desktop-menu-list-item {
+  display: inline-block;
+  position: relative;
+}
+.header__desktop-menu-list-item-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 2.5em;
+}
+.header__desktop-menu-list-item::first-letter {
+  text-transform: capitalize;
+}
+.header__desktop-menu-list-item:not(:last-child) {
+  padding-right: 59px;
+}
+.header__desktop-sigin {
+  display: inline-block;
+  position: relative;
+  border: none;
+  background: none;
+  font-size: 1.8em;
+}
+.header__desktop-sigin::first-letter {
+  text-transform: capitalize;
+}
+.header__desktop-sigin::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url("../img/sigin.svg");
+  left: -22px;
+  bottom: 5px;
+  width: 13px;
+  height: 13px;
+  background-size: 13px;
+  background-repeat: no-repeat;
+}
+.header__mobile {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=header.css.map */

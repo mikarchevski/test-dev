@@ -1,0 +1,24 @@
+@import url(./styles/header.css);
+@import url(./styles/common.css);
+@import url(./styles/footer.css);
+@import url(./styles/media.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+.white-text{
+    color:#FFFFFF;
+}
+
+.purple-text{
+    color:#C283F3
+}
+.dark-text{
+    color: #333333;
+}
+
