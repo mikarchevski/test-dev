@@ -1,0 +1,23 @@
+.footer{
+    display: block;
+    background: #000000;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 51px 0 42px;
+    }
+    &__social{
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            gap: 20px;
+            &-item{
+                &-svg{
+                    width: 45px;
+                }
+            }
+        }
+    }
+}

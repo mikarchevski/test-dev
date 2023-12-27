@@ -274,6 +274,9 @@
 }
 
 .events{
+    display: block;
+    position: relative;
+    padding: 0 0 76px 0;
     &__mobitle{
         display: none;
     }
@@ -307,8 +310,11 @@
             &-about{
                 display: block;
                 position: relative;
-                padding: 15px 50px;
+                height: 386px;
+                padding: 13px 0 0 47px;
                 &-place{
+                    position: relative;
+                    padding-right: 19px;
                     color: #999;
                     text-align: right;
                     font-size: 1.2em;
@@ -321,14 +327,27 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
+                    letter-spacing: -0.4px;
                 }
                 &-desc{
                     font-size: 1.6em;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 32px; /* 200% */
-                    padding: 3px 0 81px 0;
+                    padding: 3px 36px 81px 0;
                 }
+            }
+            &-details{
+                display: inline-block;
+                position: absolute;
+                bottom: 42px;
+                border-bottom: 1px solid;
+                color: #9D5CD0;
+                text-decoration: none;
+                font-size: 1.6em;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
             }
             &-hide{
                 display: none;
@@ -342,6 +361,8 @@
         }
     }
     &__showall{
+        display: block;
+        margin: 0 auto;
         padding: 17px 35px;
         border-radius: 100px;
         border: 2px solid #9D5CD0;
@@ -351,6 +372,182 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    }
+}
 
+.publications{
+    display: block;
+    position: relative;
+    padding: 80px 0;
+    background-image: url("../img/publicationsBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        display: block;
+        padding: 16px 0 0 0;
+        font-size: 4.8em;
+        font-weight: 400;
+    }
+    &__filter{
+        &-title{
+            font-size: 1.6em;
+            font-weight: 700;
+            line-height: 32px; /* 200% */
+        }
+        &-list{
+            list-style: none;
+            &-item{
+                display: flex;
+                &-name{
+                    font-size: 1.6em;
+                    font-weight: 400;
+                    line-height: 32px; /* 200% */
+                    padding-left: 10px;
+                    &::first-letter{
+                        text-transform: capitalize;
+                    }
+                }
+            }
+           
+        }
+    }
+    &__price{
+        &-title{
+            font-size: 1.6em;
+            font-weight: 700;
+            line-height: 32px; /* 200% */
+            padding: 27px 0 7px 0;
+        }
+        &-range{
+            display: flex;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.50);
+            &-label{
+                &-from,&-to,&-currency{
+                    padding: 3px 10px;
+                    font-size: 1.6em;
+                    font-weight: 400;
+                    line-height: 32px; /* 200% */
+                }
+            }
+            &-low,&-high{
+                width: 73px;
+                background: rgba(157, 92, 208, 0.50);
+                border: none;
+            }
+        }
+    }
+}
+
+.projects{
+    display: block;
+    position: relative;
+    padding: 81px 0 253px;
+    &__articles{
+        width: 1080px;
+        padding: 0 0 19px 0;
+        &-title{
+            font-size: 4.8em;
+            font-weight: 400;
+        }
+        &-desc{
+            font-size: 1.6em;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+            padding: 16px 0 0 0;
+        }
+    }
+    &__partners{
+        &-title{
+            font-size: 2.4em;
+            font-weight: 600;
+            line-height: 32px; /* 133.333% */
+            letter-spacing: -0.5px;
+        }
+    }
+}
+
+.contacts{
+    &__title{
+        font-size: 4.8em;
+        font-weight: 400;
+    }
+    &__wrap{
+        display: flex;
+        position: relative;
+        align-items: self-start;
+        padding: 16px 0 0 0;
+    }
+    &__place{
+        display: block;
+        border: 1px solid #cacaca;
+        padding: 123px 119px 120px 151px;
+        &-article{
+            &-name{
+                font-size: 2.4em;
+                font-weight: 600;
+                line-height: 32px; /* 133.333% */
+            }
+            &-address{
+                font-size: 1.6em;
+                font-weight: 400;
+                line-height: 32px;
+                padding: 3px 0 0 0;
+            }
+        }
+        &-form{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            gap: 16px;
+            padding: 30px 0 43px 0;
+            &-title{
+                font-size: 2.4em;
+                font-weight: 400;
+                line-height: 32px; /* 133.333% */
+            }
+            &-name,&-phone{
+                width: 400px;
+                height: 40px;
+                border-radius: 100px;
+                border: 1px solid #333;
+                color: #999;
+                font-size: 1.6em;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+            }
+            &-btn{
+                width: 159px;
+                padding: 17px 35px;
+                border-radius: 100px;
+                border: 2px solid #9D5CD0;
+                color: #9D5CD0;
+                font-size: 1.8em;
+                font-weight: 700;
+            }
+        }
+        &-chats{
+            &-title{
+                font-size: 2.4em;
+                font-weight: 400;
+                line-height: 32px; /* 133.333% */
+                padding: 0 0 14px 0;
+            }
+            &-apps{
+                display: flex;
+                gap: 20px;
+                &-whatsapp,&-tg{
+                    width: 40px;
+                }
+                
+            }
+        }
+    }
+    &__maps{
+        height: 700px;
     }
 }
