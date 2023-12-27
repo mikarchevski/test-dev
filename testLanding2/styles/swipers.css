@@ -1,0 +1,124 @@
+.mySwiper {
+  display: inline-block !important;
+  position: absolute !important;
+  top: -14% !important;
+  z-index: -1;
+  width: 100% !important;
+}
+
+.top-swiper-container,
+.top-swiper-wrapper,
+.top-swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.top-swiper-img {
+  scale: 1.03;
+}
+
+.gallerySwiper {
+  padding: 26px 0 0 0;
+}
+
+.gallery-swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 350px !important;
+  height: 350px !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-swiper-img {
+  width: 350px;
+  height: 350px;
+}
+
+.gallerySwiper-nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: end;
+  height: 30px;
+  width: 130px;
+  margin: 0 0 30px 0;
+}
+
+.gallery-swiper-button-next,
+.gallery-swiper-button-prev {
+  display: block;
+  position: relative;
+  height: 30px;
+  left: unset;
+  right: unset;
+  top: unset;
+  bottom: unset;
+  margin: 0;
+}
+
+.gallery-swiper-button-next::after,
+.gallery-swiper-button-prev::after {
+  content: unset;
+}
+
+.gallery-swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.gallery-swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+  top: unset;
+  left: unset;
+  right: unset;
+  bottom: unset;
+  width: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0 0 0 5px;
+}
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  padding: 0 0 0px 3px;
+}
+
+.swiper-pagination-total {
+  padding: 0 4px 0px 0px;
+}
+
+.publications-swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=swipers.css.map */

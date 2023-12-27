@@ -16,7 +16,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     el: ".swiper-pagination",
     type: "fraction",
     renderFraction: function (currentClass, totalClass) {
-    return '<span class="' + currentClass + '"></span>' + ' '+
+    return '<span class="' + currentClass + ''+'test"></span>' + ' '+
             '<span class="' + totalClass + '"></span>';
     },
   },

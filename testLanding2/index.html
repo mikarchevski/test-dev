@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Oranienbaum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -89,8 +91,23 @@
             
         </div>
         <div class="top__slider">
-            <img src="img/top_slider/birmingham-museums-trust-MK_98NuC4-4-unsplash 2.jpg" class="top__slider-img"alt="">
-            <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper top-swiper-wrapper">
+                <div class="swiper-slide top-swiper-slide">
+                    <img class="top-swiper-img" src="img/top_slider/top-slider-1.jpg" />
+                </div>
+                <div class="swiper-slide top-swiper-slide">
+                    <img class="top-swiper-img" src="img/top_slider/top-slider-2.jpg" />
+                </div>
+                <div class="swiper-slide top-swiper-slide">
+                    <img class="top-swiper-img" src="img/top_slider/top-slider-3.png" />
+                </div>
+                </div>
+                    
+            </div>
+        </div>
+        </div> 
+        <div class="container">
                 <article class="top__slider-article white-text">
                     <h1 class="top__slider-article-title">
                         Прикоснитесь к прекрасному
@@ -103,7 +120,6 @@
                 <button class="top__slider-btn white-text">
                     Подписаться на рассылку
                 </button>
-            </div>
         </div>
         
     </section>
@@ -147,10 +163,100 @@
                         либо воспользуйтесь лицензией. 
                     </p>
                 </article>
-                <div class="slider">
+                <div class="swiper gallerySwiper">
+                    <div class="gallerySwiper-nav">
+                        <div class="swiper-button-prev gallery-swiper-button-prev">
+                            <svg class="slider-btn-svg slider-btn-svg_prev" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="slider-btn-circle" d="M15 1C22.732 1 29 7.26801 29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26802 0.999999 15 1Z" fill="#666" stroke="#666" stroke-width="2"></path>
+                                <path class="slider-btn-arrow" d="M14 10L19 15L14 20" stroke="#fff"></path>
+                              </svg>
+                        </div>
+                        <div class="swiper-pagination gallery-swiper-pagination"></div>
 
+                        <div class="swiper-button-next gallery-swiper-button-next">
+                            <svg class="slider-btn-svg slider-btn-svg_next" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="slider-btn-circle" d="M15 1C22.732 1 29 7.26801 29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26802 0.999999 15 1Z" fill="#666" stroke="#666" stroke-width="2"></path>
+                                <path class="slider-btn-arrow" d="M14 10L19 15L14 20" stroke="#fff"></path>
+                              </svg>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/1.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/2.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/3.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/4.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/5.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/6.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/7.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/8.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/9.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/10.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/11.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/12.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/13.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/14.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/15.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/16.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/17.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/18.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/19.jpg" alt="" class="gallery-swiper-img">
+                      </div><div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/20.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/21.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/22.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/23.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                      <div class="swiper-slide gallery-swiper-slide">
+                        <img src="img/galary_slider/24.jpg" alt="" class="gallery-swiper-img">
+                      </div>
+                    </div>
+                    
                 </div>
-            </div>
         </div>
     </section>
     <section class="catalog">
@@ -456,8 +562,28 @@
                         </div>
                     </div>
                 </article>
-                <div class="slider">
-
+                <div class="swiper publicationsSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide publications-swiper-slide">Slide 1</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 2</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 3</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 4</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 5</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 6</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 7</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 8</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 9</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 10</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 11</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 12</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 13</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 14</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 15</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 16</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 17</div>
+                      <div class="swiper-slide publications-swiper-slide">Slide 18</div>
+                    </div>
+                    <div class="publications-swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -491,8 +617,28 @@
                 <p class="projects__partners-title">
                     Партнёры проектов
                 </p>
-                <div class="projects__partners-slider">
-
+                <div class="swiper projectsSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide projects-swiper-slide">Slide 1</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 2</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 3</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 4</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 5</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 6</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 7</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 8</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 9</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 10</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 11</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 12</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 13</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 14</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 15</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 16</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 17</div>
+                      <div class="swiper-slide projects-swiper-slide">Slide 18</div>
+                    </div>
+                    <div class="projects-swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -599,5 +745,8 @@
             
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/sliders.js"></script>
 </body>
 </html>
