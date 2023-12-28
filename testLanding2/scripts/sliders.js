@@ -17,7 +17,7 @@ var swiper1 = new Swiper(".gallerySwiper", {
       rows: 2,
       fill: "row",
     },
-    spaceBetween: 40,
+    spaceBetween: 49,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -31,6 +31,33 @@ var swiper1 = new Swiper(".gallerySwiper", {
         },
       },
   });
+
+
+// console.log(elem.style.marginTop);
+let elems = document.querySelectorAll('.gallery-swiper-slide');
+    
+    
+    for (let elem of elems) {
+        let attrs = elem.getAttribute('style');
+        let styles = attrs.split(';');
+        let ind = styles.indexOf(" margin-top: 49px");
+        if (ind === 2 || ind === 3){
+            elem.style.marginTop = "13px";
+        }
+    }  
+ window.onload = function() {
+    // let elems = document.querySelectorAll('.gallery-swiper-slide');
+    
+    
+    // for (let elem of elems) {
+    //     let attrs = elem.getAttribute('style');
+    //     let styles = attrs.split(';');
+    //     let ind = styles.indexOf(" margin-top: 49px");
+    //     if (ind === 2 || ind === 3){
+    //         elem.style.marginTop = "13px";
+    //     }
+    // }  
+ }
 
   var swiper = new Swiper(".publicationsSwiper", {
     slidesPerView: 3,
@@ -67,3 +94,5 @@ var swiper1 = new Swiper(".gallerySwiper", {
         prevEl: ".projects-swiper-button-prev",
       },
   });
+
+  window.onload();

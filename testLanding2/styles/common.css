@@ -148,7 +148,7 @@
   max-width: 401px;
   height: 845px;
   width: 400px;
-  padding: 0 262px 0 0;
+  padding: 0 221px 0 0;
 }
 .gallery__desc-title {
   font-size: 4.8em;
@@ -496,9 +496,10 @@
   letter-spacing: -0.5px;
 }
 .projects__partners-slider {
-  isplay: flex;
+  display: flex;
   position: relative;
   align-items: center;
+  padding: 22px 0 0 0;
 }
 
 .contacts__title {

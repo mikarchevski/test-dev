@@ -24,16 +24,14 @@
 // gallery slider
 .gallerySwiper{
     padding: 26px 0 0 0;
+    width: 2000px !important;
+    height: 100%;
 }
 .gallery-swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
     width: 350px !important;
     height: 350px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+   
   }
   .gallery-swiper-img{
     width: 350px;
@@ -193,7 +191,7 @@
     position: relative;
     height: 30px;
     margin: 0;
-    left: 0;
+        left: 0;
   }
   .projects-swiper-button-next::after,
   .projects-swiper-button-prev::after{

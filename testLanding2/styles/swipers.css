@@ -19,17 +19,13 @@
 
 .gallerySwiper {
   padding: 26px 0 0 0;
+  width: 2000px !important;
+  height: 100%;
 }
 
 .gallery-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
   width: 350px !important;
   height: 350px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .gallery-swiper-img {
