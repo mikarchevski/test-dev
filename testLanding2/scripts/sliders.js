@@ -38,11 +38,21 @@ var swiper1 = new Swiper(".gallerySwiper", {
     grid: {
       rows: 1,
     },
-    spaceBetween: 30,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: ".publications-swiper-button-next",
+        prevEl: ".publications-swiper-button-prev",
+      },
     pagination: {
       el: ".publications-swiper-pagination",
       clickable: true,
+      type: "fraction",
+        renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + '/'+
+                '<span class="' + totalClass + '"></span>';
+        },
     },
+    
   });
 
   var swiper = new Swiper(".projectsSwiper", {
@@ -51,5 +61,9 @@ var swiper1 = new Swiper(".gallerySwiper", {
     grid: {
       rows: 1,
     },
-    spaceBetween: 30,
+    spaceBetween: 46,
+    navigation: {
+        nextEl: ".projects-swiper-button-next",
+        prevEl: ".projects-swiper-button-prev",
+      },
   });

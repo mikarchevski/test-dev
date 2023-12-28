@@ -186,7 +186,7 @@
 .catalog {
   display: block;
   position: relative;
-  padding: 80px 0;
+  padding: 81px 0;
   height: 1393px;
 }
 .catalog__about {
@@ -197,7 +197,6 @@
   display: flex;
   position: relative;
   align-items: center;
-  padding: 0 0 16px 0;
 }
 .catalog__about-title {
   font-size: 4.8em;
@@ -368,7 +367,7 @@
 .publications {
   display: block;
   position: relative;
-  padding: 80px 0;
+  padding: 62px 0 74px 0;
   background-image: url("../img/publicationsBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -377,53 +376,98 @@
   display: flex;
   justify-content: space-between;
 }
-.publications__title {
+.publications__desc {
+  padding: 0px 172px 0 0;
+}
+.publications__desc-title {
   display: block;
-  padding: 16px 0 0 0;
+  padding: 16px 0 17px 0;
   font-size: 4.8em;
   font-weight: 400;
 }
-.publications__filter-title {
+.publications__desc-filter-title {
   font-size: 1.6em;
   font-weight: 700;
   line-height: 32px; /* 200% */
 }
-.publications__filter-list {
+.publications__desc-filter-list {
   list-style: none;
 }
-.publications__filter-list-item {
+.publications__desc-filter-list-item {
   display: flex;
 }
-.publications__filter-list-item-name {
+.publications__desc-filter-list-item-name {
   font-size: 1.6em;
   font-weight: 400;
   line-height: 32px; /* 200% */
   padding-left: 10px;
 }
-.publications__filter-list-item-name::first-letter {
+.publications__desc-filter-list-item-name::first-letter {
   text-transform: capitalize;
 }
-.publications__price-title {
+.publications__desc-price-title {
   font-size: 1.6em;
   font-weight: 700;
   line-height: 32px; /* 200% */
   padding: 27px 0 7px 0;
 }
-.publications__price-range {
+.publications__desc-price-range {
   display: flex;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.publications__price-range-label-from, .publications__price-range-label-to, .publications__price-range-label-currency {
+.publications__desc-price-range-label-from, .publications__desc-price-range-label-to, .publications__desc-price-range-label-currency {
   padding: 3px 10px;
   font-size: 1.6em;
   font-weight: 400;
   line-height: 32px; /* 200% */
 }
-.publications__price-range-low, .publications__price-range-high {
+.publications__desc-price-range-low, .publications__desc-price-range-high {
   width: 73px;
   background: rgba(157, 92, 208, 0.5);
   border: none;
+}
+.publications__book {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.publications__book-articles {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 23px 0 15px 0;
+}
+.publications__book-about-name {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.publications__book-about-name::first-letter {
+  text-transform: capitalize;
+}
+.publications__book-about-author {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.publications__book-price {
+  font-size: 1.6em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.publications__book-order {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: no-repeat;
+  border-radius: 100px;
+  border: 2px solid #9D5CD0;
+  padding: 7px 20px;
 }
 
 .projects {
@@ -450,6 +494,11 @@
   font-weight: 600;
   line-height: 32px; /* 133.333% */
   letter-spacing: -0.5px;
+}
+.projects__partners-slider {
+  isplay: flex;
+  position: relative;
+  align-items: center;
 }
 
 .contacts__title {
