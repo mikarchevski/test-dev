@@ -16,6 +16,9 @@
             &-item{
                 &-svg{
                     width: 45px;
+                    &:hover{
+                        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(200%) contrast(100%)
+                    }
                 }
             }
         }

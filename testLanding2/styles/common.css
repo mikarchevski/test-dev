@@ -3,6 +3,25 @@
   margin: 0 auto;
 }
 
+a {
+  cursor: pointer;
+  transition: color 0.16s ease-out, color 0.16s ease-out;
+}
+a:hover {
+  color: rgb(194, 131, 243);
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.16s ease-out, color 0.16s ease-out;
+}
+button:hover {
+  border-radius: 100px;
+  border: 3px solid #D1A9F0;
+  color: #FFF;
+  background: #9D5CD0;
+}
+
 .top {
   display: block;
   position: relative;
@@ -14,6 +33,7 @@
   width: 100%;
   top: 0;
   background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 .top__filters-wrap {
   display: flex;
@@ -25,7 +45,9 @@
   display: flex;
   position: relative;
 }
-.top__filters-list-item {
+.top__filters-list-item-link {
+  text-decoration: none;
+  border: none;
   color: #FFF;
   font-size: 1.8em;
   font-style: normal;
@@ -89,8 +111,9 @@
   line-height: 30px;
 }
 .top__slider-btn {
+  width: 314px;
   height: 70px;
-  padding: 17px 35px;
+  padding: 17px 10px;
   align-items: center;
   gap: 10px;
   border-radius: 100px;
@@ -203,13 +226,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 0 0 15px 0;
+  padding: 0 39px 15px 0;
 }
 .catalog__about-countries-list {
   display: flex;
   position: relative;
   list-style: none;
-  padding: 8px 0 0 0;
+  padding: 0px 0 8px 0;
 }
 .catalog__about-countries-list-item {
   padding: 0 50px 0 0;
@@ -220,12 +243,20 @@
 .catalog__about-countries-list-item-link-img {
   width: 46px;
   height: 46px;
+  border-radius: 29px;
+}
+.catalog__about-countries-list-item-link-img:hover {
+  box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
 }
 .catalog__about-desc {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 200% */
+}
+.catalog__info {
+  display: flex;
+  position: relative;
 }
 .catalog__info-desc {
   width: 750px;
@@ -260,6 +291,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+}
+.catalog__info-other {
+  display: block;
+  position: relative;
 }
 
 .events {
@@ -353,7 +388,8 @@
 .events__showall {
   display: block;
   margin: 0 auto;
-  padding: 17px 35px;
+  height: 60px;
+  padding: 15px 35px 17px;
   border-radius: 100px;
   border: 2px solid #9D5CD0;
   color: #9D5CD0;
@@ -395,15 +431,43 @@
 }
 .publications__desc-filter-list-item {
   display: flex;
+  position: relative;
 }
 .publications__desc-filter-list-item-name {
   font-size: 1.6em;
   font-weight: 400;
   line-height: 32px; /* 200% */
-  padding-left: 10px;
+  padding-left: 24px;
+  cursor: pointer;
 }
 .publications__desc-filter-list-item-name::first-letter {
   text-transform: capitalize;
+}
+.publications__desc-filter-list-item-name:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+.publications__desc-filter-list-item-name:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid currentColor;
+}
+.publications__desc-filter-list-item-name:hover {
+  color: rgb(194, 131, 243);
+}
+.publications__desc-filter-list-item-checkbox {
+  display: none;
 }
 .publications__desc-price-title {
   font-size: 1.6em;
@@ -460,6 +524,9 @@
   line-height: normal;
 }
 .publications__book-order {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
   font-size: 1.6em;
   font-style: normal;
   font-weight: 700;
@@ -489,6 +556,19 @@
   line-height: 32px; /* 200% */
   padding: 16px 0 0 0;
 }
+.projects__articles-desc-btn {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid #9D5CD0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.16s ease-out, color 0.16s ease-out;
+}
 .projects__partners-title {
   font-size: 2.4em;
   font-weight: 600;
@@ -500,6 +580,15 @@
   position: relative;
   align-items: center;
   padding: 22px 0 0 0;
+}
+.projects__partners-slider-img {
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+}
+.projects__partners-slider-img:hover {
+  filter: none;
+  opacity: 1;
 }
 
 .contacts__title {
@@ -552,7 +641,8 @@
 }
 .contacts__place-form-btn {
   width: 159px;
-  padding: 17px 35px;
+  height: 62px;
+  padding: 14px 35px 17px;
   border-radius: 100px;
   border: 2px solid #9D5CD0;
   color: #9D5CD0;

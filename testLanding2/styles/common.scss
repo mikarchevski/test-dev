@@ -2,6 +2,25 @@
     width: 1600px;
     margin: 0 auto;
 }
+a {
+    cursor: pointer;
+    transition: color 0.16s ease-out, color 0.16s ease-out;
+    &:hover{
+        color:rgba(194, 131, 243, 1);
+        
+    }
+}
+
+button{
+    cursor: pointer;
+    transition: background-color 0.16s ease-out, color 0.16s ease-out;
+    &:hover{
+        border-radius: 100px;
+        border: 3px solid #D1A9F0;
+        color:#FFF;
+        background: #9D5CD0;
+    }
+}
 .top{
     display: block;
     position: relative;
@@ -12,6 +31,7 @@
         width: 100%;
         top: 0;
         background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
         &-wrap{
             display: flex;
             justify-content: space-between;
@@ -22,17 +42,22 @@
             display: flex;
             position: relative;
             &-item{
-                color: #FFF;
-                font-size: 1.8em;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+                &-link{
+                    text-decoration: none;
+                    border: none;
+                    color: #FFF;
+                    font-size: 1.8em;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
                 &::first-letter{
                     text-transform: capitalize;
                 }
                 &:not(:last-child){
                     padding-right: 112px;
                 }
+                
             }
         }
 
@@ -91,8 +116,9 @@
             }
         }
         &-btn{
+            width: 314px;
             height: 70px;
-            padding: 17px 35px;
+            padding: 17px 10px;
             align-items: center;
             gap: 10px;
             border-radius: 100px;
@@ -208,14 +234,14 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            padding: 0 0 15px 0;
+            padding: 0 39px 15px 0;
         }
         &-countries{
             &-list{
                 display: flex;
                 position: relative;
                 list-style: none;
-                padding: 8px 0 0 0;
+                padding: 0px 0 8px 0;
                 &-item{
                     padding: 0 50px 0 0;
                     &-link{
@@ -223,6 +249,10 @@
                         &-img{
                             width: 46px;
                             height: 46px;
+                            border-radius: 29px;
+                            &:hover{
+                                box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.70);
+                            }
                         }
                     }
 
@@ -237,6 +267,8 @@
         }
     }
     &__info{
+        display: flex;
+        position: relative;
         &-desc{
             width: 750px;
             &-photo{
@@ -270,6 +302,10 @@
                     line-height: 32px;
                 }
             }
+        }
+        &-other{
+            display: block;
+            position: relative;
         }
     }
 }
@@ -364,7 +400,8 @@
     &__showall{
         display: block;
         margin: 0 auto;
-        padding: 17px 35px;
+        height: 60px;
+        padding: 15px 35px 17px;
         border-radius: 100px;
         border: 2px solid #9D5CD0;
         color: #9D5CD0;
@@ -405,14 +442,43 @@
                 list-style: none;
                 &-item{
                     display: flex;
+                    position: relative;
+                    
                     &-name{
                         font-size: 1.6em;
                         font-weight: 400;
                         line-height: 32px; /* 200% */
-                        padding-left: 10px;
+                        padding-left: 24px;
+                        cursor: pointer;
                         &::first-letter{
                             text-transform: capitalize;
                         }
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            top: 15px;
+                            left: 5px;
+                            width: 4px;
+                            height: 4px;
+                            background-color: currentColor;
+                            border-radius: 50%;
+                        }
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            top: 10px;
+                            left: 0;
+                            display: inline-block;
+                            width: 12px;
+                            height: 12px;
+                            border: 1px solid currentColor;
+                        }
+                        &:hover{
+                            color:rgba(194, 131, 243, 1);
+                        }
+                    }
+                    &-checkbox{
+                        display:none;
                     }
                 }
                
@@ -480,6 +546,9 @@
             line-height: normal;
         }
         &-order{
+            display: inline-block;
+            width: 120px;
+            height: 40px;
             font-size: 1.6em;
             font-style: normal;
             font-weight: 700;
@@ -508,6 +577,19 @@
             font-weight: 400;
             line-height: 32px; /* 200% */
             padding: 16px 0 0 0;
+            &-btn{
+                position: relative;
+                width: 16px;
+                height: 16px;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 1;
+                background-color: transparent;
+                border: 1px solid #9D5CD0;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background-color 0.16s ease-out, color 0.16s ease-out;
+            }
         }
     }
     &__partners{
@@ -522,6 +604,15 @@
             position: relative;
             align-items: center;
             padding: 22px 0 0 0;
+            &-img{
+                filter: grayscale(1);
+                opacity: 0.3;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    filter: none;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -577,7 +668,8 @@
             }
             &-btn{
                 width: 159px;
-                padding: 17px 35px;
+                height: 62px;
+                padding: 14px 35px 17px;
                 border-radius: 100px;
                 border: 2px solid #9D5CD0;
                 color: #9D5CD0;

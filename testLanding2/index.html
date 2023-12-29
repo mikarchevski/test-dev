@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="styles/accordion.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Oranienbaum&display=swap" rel="stylesheet">
@@ -61,19 +61,19 @@
                 <div class="top__filters-wrap">
                     <ul class="top__filters-list">
                         <li class="top__filters-list-item">
-                            реализм
+                            <a href="" class="top__filters-list-item-link">реализм</a> 
                         </li>
                         <li class="top__filters-list-item">
-                            импрессионизм
+                            <a href="" class="top__filters-list-item-link">импрессионизм</a> 
                         </li>
                         <li class="top__filters-list-item">
-                            постимпрессионизм
+                            <a href="" class="top__filters-list-item-link">постимпрессионизм</a>
                         </li>
                         <li class="top__filters-list-item">
-                            авангард
+                            <a href="" class="top__filters-list-item-link"> авангард</a>
                         </li>
                         <li class="top__filters-list-item">
-                            футуризм
+                            <a href="" class="top__filters-list-item-link">футуризм</a>
                         </li>
                     </ul>
                     <div class="top__filters-search">
@@ -121,7 +121,6 @@
                     Подписаться на рассылку
                 </button>
         </div>
-        
     </section>
     <section class="about-us">
         <div class="container">
@@ -329,7 +328,33 @@
                     </article>
                 </div>
                 <div class="catalog__info-others">
+                    <ul id="my-accordion" class="accordionjs">
 
+                        <!-- Section 1 -->
+                        <li>
+                            <div>Section 1 title</div>
+                            <div>
+                                asdf
+                            </div>
+                        </li>
+                    
+                        <!-- Section 2 -->
+                        <li>
+                            <div>Section 2 title</div>
+                            <div>
+                                asdf
+                            </div>
+                        </li>
+                    
+                        <!-- Section 3 -->
+                        <li>
+                            <div>Section 3 title</div>
+                            <div>
+                                asdf
+                            </div>
+                        </li>
+                    
+                    </ul>
                 </div>
             </div>
         </div>
@@ -470,76 +495,52 @@
                         </p>
                         <ul class="publications__desc-filter-list">
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    бестселлеры
-                                </p>
+                                <input id="bestsellers" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="bestsellers"  class="publications__desc-filter-list-item-name">бестселлеры</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Искусство
-                                </p>
+                                <input id="art" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="art" class="publications__desc-filter-list-item-name">искусство</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    архитектура
-                                </p>
+                                <input id="arch" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="arch" class="publications__desc-filter-list-item-name">архитектура</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Дизайн
-                                </p>
+                                <input id="design" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="design" class="publications__desc-filter-list-item-name">Дизайн</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Мода
-                                </p>
+                                <input id="moda" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="moda" class="publications__desc-filter-list-item-name">Мода</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Детям
-                                </p>
+                                <input id="forKids"type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="forKids" class="publications__desc-filter-list-item-name">Детям</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Художественная литература 
-                                </p>
+                                <input id="literature" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="literature" class="publications__desc-filter-list-item-name">Художественная литература </label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Публицистика
-                                </p>
+                                <input id="publicism" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="publicism" class="publications__desc-filter-list-item-name">Публицистика</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Путеводители
-                                </p>
+                                <input id="guides" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="guides" class="publications__desc-filter-list-item-name">Путеводители</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Философия
-                                </p>
+                                <input id="philosophy" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="philosophy" class="publications__desc-filter-list-item-name">Философия</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Учебная литература 
-                                </p>
+                                <input id="schoolLit" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="schoolLit" class="publications__desc-filter-list-item-name">Учебная литература</label>
                             </li>
                             <li class="publications__desc-filter-list-item">
-                                <input type="checkbox" class="publications__desc-filter-list-item-checkbox">
-                                <p class="publications__desc-filter-list-item-name">
-                                    Журналы и газеты 
-                                </p>
+                                <input id="magazine" type="checkbox" class="publications__desc-filter-list-item-checkbox">
+                                <label for="magazine" class="publications__desc-filter-list-item-name">Журналы и газеты </label>
                             </li>
                         </ul>
                     </div>
@@ -638,12 +639,13 @@
                     своевременного выполнения сверхзадачи. А ещё независимые государства 
                     смешаны с не уникальными данными до степени совершенной неузнаваемости,
                     из-за чего возрастает их статус бесполезности.
-                    Прежде всего, постоянное информационно-пропагандистское     
+                    Прежде всего, постоянное информационно-пропагандистское 
+                    <button class="projects__articles-desc-btn" data-tooltip="Пример современных тенденций - современная методология разработки" aria-label="Пример современных тенденций - современная методология разработки">i</button>    
                     обеспечение нашей деятельности однозначно фиксирует
                     необходимость экономической целесообразности принимаемых решений.
                     И нет сомнений, что действия представителей оппозиции могут 
-                    быть рассмотрены исключительно в разрезе маркетинговых и 
-                    финансовых      предпосылок. 
+                    быть рассмотрены<button class="projects__articles-desc-btn" data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции" aria-label="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">i</button> исключительно в разрезе маркетинговых и 
+                    финансовых <button class="projects__articles-desc-btn" data-tooltip="В стремелении повысить качество" aria-label="В стремелении повысить качество">i</button>     предпосылок. 
                     Банальные, но неопровержимые выводы, а также представители 
                     современных социальных резервов призывают нас к новым свершениям, 
                     которые, в свою очередь, должны быть смешаны с не уникальными д
@@ -665,31 +667,31 @@
                     <div class="swiper projectsSwiper">
                         <div class="swiper-wrapper projects-swiper-wrapper">
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-1.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-1.svg" alt="" class="projects__partners-slider-img">
                         </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-2.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-2.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-3.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-3.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-4.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-4.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-5.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-5.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-6.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-6.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-7.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-7.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-8.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-8.svg" alt="" class="projects__partners-slider-img">
                           </div>
                           <div class="swiper-slide projects-swiper-slide">
-                            <img src="img/projects_slider/img-9.svg" alt="" class="projects-swiper-img">
+                            <img src="img/projects_slider/img-9.svg" alt="" class="projects__partners-slider-img">
                           </div>
                         </div>
     
@@ -811,6 +813,8 @@
         </div>
     </footer>
     
+    <script src="/scripts/accordion.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/sliders.js"></script>
 </body>

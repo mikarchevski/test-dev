@@ -58,8 +58,15 @@
     bottom: unset;
     margin: 0;
   }
+.slider-btn-circle:hover{
+    filter: invert(45%) sepia(80%) saturate(415%) hue-rotate(230deg) brightness(86%) contrast(101%);
+}
   .gallery-swiper-button-next::after,
-  .gallery-swiper-button-prev::after{
+  .gallery-swiper-button-prev::after,
+  .publications-swiper-button-next::after,
+  .publications-swiper-button-prev::after,
+  .projects-swiper-button-next::after,
+  .projects-swiper-button-prev::after{
     content: unset;
   }
 
@@ -135,10 +142,7 @@
     bottom: unset;
     margin: 0;
   }
-  .publications-swiper-button-next::after,
-  .publications-swiper-button-prev::after{
-    content: unset;
-  }
+
 
   .publications-swiper-button-prev{
     transform: rotate(180deg);
@@ -175,10 +179,7 @@
     font-size: 18px;
   }
 
-.projects-swiper-img{
-    filter: grayscale(1);
-    opacity: 0.3;
-}
+
 .projects-swiper-slide{
     border: 1px solid #CACACA;
     background: #FFF;
@@ -193,10 +194,7 @@
     margin: 0;
         left: 0;
   }
-  .projects-swiper-button-next::after,
-  .projects-swiper-button-prev::after{
-    content: unset;
-  }
+
 
   .projects-swiper-button-prev{
     transform: rotate(180deg);
