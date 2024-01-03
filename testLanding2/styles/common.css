@@ -11,6 +11,13 @@ a {
 a:hover {
   color: rgb(194, 131, 243);
 }
+a:active {
+  color: #7943A4;
+  background-color: unset;
+}
+a:focus {
+  color: #7943A4;
+}
 
 button {
   cursor: pointer;
@@ -46,17 +53,82 @@ button:hover {
   display: flex;
   position: relative;
 }
-.top__filters-list-item-link {
-  text-decoration: none;
-  border: none;
-  color: #FFF;
+.top__filters-list-item {
+  display: block;
+  position: relative;
+}
+.top__filters-list-item-label {
+  display: block;
+  justify-content: space-between;
   font-size: 1.8em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
-.top__filters-list-item::first-letter {
-  text-transform: capitalize;
+.top__filters-list-item-label::after {
+  content: "❯";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+.top__filters-list-item-label:hover {
+  color: #7943A4;
+}
+.top__filters-list-item-label:first-letter {
+  text-transform: uppercase;
+}
+.top__filters-list-item-label--active::after {
+  transform: rotate(270deg);
+  transform-origin: center;
+}
+.top__filters-list-item-content {
+  display: inline;
+  position: absolute;
+  width: 300px;
+  max-height: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.35s;
+  overflow: hidden;
+}
+.top__filters-list-item-content--active {
+  width: 300px;
+  height: 300px;
+  max-height: 300px;
+  padding: 24px 0;
+  overflow-y: scroll;
+}
+.top__filters-list-item-content-list {
+  list-style: none;
+}
+.top__filters-list-item-content-list-item {
+  width: 220px;
+  height: 40px;
+  padding-bottom: 20px;
+}
+.top__filters-list-item-content-list-item-01, .top__filters-list-item-content-list-item-05 {
+  background-image: url("../img/top_menu/tintoretto.png");
+  width: 100%;
+  height: 100%;
+}
+.top__filters-list-item-content-list-item-02, .top__filters-list-item-content-list-item-06 {
+  background-image: url("../img/top_menu/fridrih.png");
+  width: 100%;
+  height: 100%;
+}
+.top__filters-list-item-content-list-item-03, .top__filters-list-item-content-list-item-07 {
+  background-image: url("../img/top_menu/leonardo.png");
+  width: 100%;
+  height: 100%;
+}
+.top__filters-list-item-content-list-item-04, .top__filters-list-item-content-list-item-08 {
+  background-image: url("../img/top_menu/verokko.png");
+  width: 100%;
+  height: 100%;
 }
 .top__filters-list-item:not(:last-child) {
   padding-right: 112px;

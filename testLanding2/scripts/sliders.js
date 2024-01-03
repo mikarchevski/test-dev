@@ -95,4 +95,64 @@ let elems = document.querySelectorAll('.gallery-swiper-slide');
       },
   });
 
-  window.onload();
+
+let intervalId;
+let intervalId1;
+document.querySelectorAll('.top__filters-list-item-label').forEach(e => {
+    e.addEventListener('click', e => {
+        let menu = e.currentTarget.dataset.path   
+        let currentBtn = document.querySelector(`[data-path=${menu}]`); 
+        document.querySelectorAll('.top__filters-list-item-content').forEach(e => {
+          let currentMenu = document.querySelector(`[data-target=${menu}]`);
+          
+            if (!currentMenu.classList.contains('open')) {
+                e.classList.remove('top__filters-list-item-content--active');
+                e.classList.remove('open');
+                currentMenu.classList.add('top__filters-list-item-content--active');
+                intervalId = setTimeout(() => {
+                    currentMenu.classList.add('open');
+                }, 0);
+            }
+
+            if (currentMenu.classList.contains('open')) {
+                clearTimeout(intervalId);
+                currentMenu.classList.remove('top__filters-list-item-content--active');
+                intervalId = setTimeout(() => {
+                    currentMenu.classList.remove('open');
+                }, 0);
+            }
+
+            window.onclick = e => {
+                if (e.target == currentMenu || e.target == document.querySelector(`[data-path=${menu}]`)) {
+                    return;
+                } else {
+                    currentMenu.classList.remove('top__filters-list-item-content--active');
+                    currentMenu.classList.remove('open');
+                    currentBtn.classList.remove('top__filters-list-item-label--active');
+                    currentBtn.classList.remove('open');
+                }
+            }
+        });
+        // ----------------------------------------------------------------
+        
+          console.log(currentBtn);
+
+        if (!currentBtn.classList.contains('open')){
+          currentBtn.classList.remove('top__filters-list-item-label--active');
+          currentBtn.classList.remove('open');
+          currentBtn.classList.add('top__filters-list-item-label--active');
+          intervalId1 = setTimeout(() => {
+            currentBtn.classList.add('open');
+        }, 0);
+      }
+
+        if (currentBtn.classList.contains('open')){
+          clearTimeout(intervalId1);
+          currentBtn.classList.remove('top__filters-list-item-label--active');
+          intervalId1 = setTimeout(() => {
+            currentBtn.classList.remove('top__filters-list-item-label--active');
+            currentBtn.classList.remove('open');
+          },0);
+        }
+    });
+});
