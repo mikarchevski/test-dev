@@ -16,7 +16,8 @@ a:active {
   background-color: unset;
 }
 a:focus {
-  color: #7943A4;
+  background-color: #7943A4;
+  border: none;
 }
 
 button {
@@ -28,6 +29,9 @@ button:hover {
   border: 3px solid #D1A9F0;
   color: #FFF;
   background: #9D5CD0;
+}
+button:focus {
+  background-color: #7943A4;
 }
 
 .top {
@@ -59,6 +63,7 @@ button:hover {
 }
 .top__filters-list-item-label {
   display: block;
+  position: relative;
   justify-content: space-between;
   font-size: 1.8em;
   font-style: normal;
@@ -69,8 +74,9 @@ button:hover {
 .top__filters-list-item-label::after {
   content: "❯";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  position: absolute;
+  right: -20px;
+  top: 1px;
   text-align: center;
   transition: all 0.35s;
   transform-origin: center;
@@ -83,52 +89,73 @@ button:hover {
   text-transform: uppercase;
 }
 .top__filters-list-item-label--active::after {
-  transform: rotate(270deg);
-  transform-origin: center;
+  transform: rotate(-90deg);
 }
 .top__filters-list-item-content {
   display: inline;
   position: absolute;
+  top: 80px;
   width: 300px;
   max-height: 0;
   background: rgba(0, 0, 0, 0.4);
   transition: all 0.35s;
-  overflow: hidden;
+  overflow-y: scroll;
+}
+.top__filters-list-item-content::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+.top__filters-list-item-content::-webkit-scrollbar {
+  width: 2px;
+  /* ширина scrollbar */
+}
+.top__filters-list-item-content::-webkit-scrollbar-track {
+  background: #FFF;
+  /* цвет дорожки */
 }
 .top__filters-list-item-content--active {
   width: 300px;
   height: 300px;
   max-height: 300px;
   padding: 24px 0;
-  overflow-y: scroll;
 }
 .top__filters-list-item-content-list {
   list-style: none;
 }
 .top__filters-list-item-content-list-item {
+  display: block;
+  position: inherit;
   width: 220px;
   height: 40px;
-  padding-bottom: 20px;
+  margin: 0 auto 24px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 2px solid transparent;
+  outline-offset: -2px;
+  transition: border 0.3s ease;
+}
+.top__filters-list-item-content-list-item-text {
+  max-width: 220px;
+  max-height: 40px;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 10px;
+}
+.top__filters-list-item-content-list-item:hover {
+  border: 2px solid #9D5CD0;
 }
 .top__filters-list-item-content-list-item-01, .top__filters-list-item-content-list-item-05 {
   background-image: url("../img/top_menu/tintoretto.png");
-  width: 100%;
-  height: 100%;
 }
 .top__filters-list-item-content-list-item-02, .top__filters-list-item-content-list-item-06 {
   background-image: url("../img/top_menu/fridrih.png");
-  width: 100%;
-  height: 100%;
 }
 .top__filters-list-item-content-list-item-03, .top__filters-list-item-content-list-item-07 {
   background-image: url("../img/top_menu/leonardo.png");
-  width: 100%;
-  height: 100%;
 }
 .top__filters-list-item-content-list-item-04, .top__filters-list-item-content-list-item-08 {
   background-image: url("../img/top_menu/verokko.png");
-  width: 100%;
-  height: 100%;
 }
 .top__filters-list-item:not(:last-child) {
   padding-right: 112px;
@@ -221,7 +248,8 @@ button:hover {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 
 .gallery {
@@ -257,7 +285,8 @@ button:hover {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .gallery__desc-download {
   position: absolute;
@@ -325,7 +354,8 @@ button:hover {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .catalog__info {
   display: flex;
@@ -385,7 +415,8 @@ button:hover {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+  /* 133.333% */
   overflow: hidden;
 }
 .catalog__info-accordion-list-item-input {
@@ -401,7 +432,8 @@ button:hover {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+  /* 133.333% */
   border-top: 1px solid #CACACA;
   cursor: pointer;
 }
@@ -444,7 +476,8 @@ button:hover {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .catalog__info input:checked + .catalog__info-accordion-list-item-label {
   border-bottom: 1px solid #CACACA;
@@ -525,7 +558,8 @@ button:hover {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
   padding: 3px 36px 81px 0;
 }
 .events__list-item-details {
@@ -538,7 +572,8 @@ button:hover {
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .events__list-item-hide {
   display: none;
@@ -588,7 +623,8 @@ button:hover {
 .publications__desc-filter-title {
   font-size: 1.6em;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .publications__desc-filter-list {
   list-style: none;
@@ -600,7 +636,8 @@ button:hover {
 .publications__desc-filter-list-item-name {
   font-size: 1.6em;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
   padding-left: 24px;
   cursor: pointer;
 }
@@ -636,7 +673,8 @@ button:hover {
 .publications__desc-price-title {
   font-size: 1.6em;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
   padding: 27px 0 7px 0;
 }
 .publications__desc-price-range {
@@ -648,7 +686,8 @@ button:hover {
   padding: 3px 10px;
   font-size: 1.6em;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .publications__desc-price-range-low, .publications__desc-price-range-high {
   width: 73px;
@@ -717,7 +756,8 @@ button:hover {
 .projects__articles-desc {
   font-size: 1.6em;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
   padding: 16px 0 0 0;
 }
 .projects__articles-desc-btn {
@@ -736,7 +776,8 @@ button:hover {
 .projects__partners-title {
   font-size: 2.4em;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+  /* 133.333% */
   letter-spacing: -0.5px;
 }
 .projects__partners-slider {
@@ -773,7 +814,8 @@ button:hover {
 .contacts__place-article-name {
   font-size: 2.4em;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+  /* 133.333% */
 }
 .contacts__place-article-address {
   font-size: 1.6em;
@@ -791,7 +833,8 @@ button:hover {
 .contacts__place-form-title {
   font-size: 2.4em;
   font-weight: 400;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+  /* 133.333% */
 }
 .contacts__place-form-name, .contacts__place-form-phone {
   width: 400px;
@@ -801,7 +844,8 @@ button:hover {
   color: #999;
   font-size: 1.6em;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
+  /* 200% */
 }
 .contacts__place-form-btn {
   width: 159px;
@@ -816,7 +860,8 @@ button:hover {
 .contacts__place-chats-title {
   font-size: 2.4em;
   font-weight: 400;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+  /* 133.333% */
   padding: 0 0 14px 0;
 }
 .contacts__place-chats-apps {

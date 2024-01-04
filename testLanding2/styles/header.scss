@@ -64,6 +64,15 @@
                 background-size: 13px;
                 background-repeat: no-repeat;
             }
+
+            &:hover{
+                border: none;
+                color: rgba(194, 131, 243, 1);
+                background: none;
+                &::before{
+                    filter: invert(25%) sepia(51%) saturate(5425%) hue-rotate(220deg) brightness(97%) contrast(96%);
+                }
+            }
         }
     }
     &__mobile{

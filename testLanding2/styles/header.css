@@ -65,6 +65,14 @@
   background-size: 13px;
   background-repeat: no-repeat;
 }
+.header__desktop-sigin:hover {
+  border: none;
+  color: rgb(194, 131, 243);
+  background: none;
+}
+.header__desktop-sigin:hover::before {
+  filter: invert(25%) sepia(51%) saturate(5425%) hue-rotate(220deg) brightness(97%) contrast(96%);
+}
 .header__mobile {
   display: none;
   position: relative;
