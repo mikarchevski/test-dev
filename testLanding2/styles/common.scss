@@ -32,9 +32,14 @@ button {
         color: #FFF;
         background: #9D5CD0;
     }
-    &:focus {
+
+    &:active {
         background-color: #7943A4;
     }
+
+    //     &:focus {
+    //         background-color: #7943A4;
+    //     }
 }
 
 .top {
@@ -320,7 +325,7 @@ button {
         max-width: 401px;
         height: 845px;
         width: 400px;
-        padding: 0 221px 0 0;
+        margin: 0 51px 0 0;
 
         &-title {
             font-size: 4.8em;
@@ -332,13 +337,80 @@ button {
 
         &-filter {
             &-title {
+                display: block;
+                padding: 0 0 10px 0;
                 font-size: 1.6em;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 32px;
-                /* 200% */
             }
 
+            &-selector {
+                display: block;
+                position: relative;
+                border-radius: 6px;
+                border: 1px solid #FFF;
+                width: 400px;
+                cursor: pointer;
+
+                &-header {
+                    display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 40px;
+                    flex-shrink: 0;
+                    padding: 0 15px;
+
+                    &-current {
+                        font-size: 1.6em;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                        /* 200% */
+
+                    }
+
+                    &-icon {
+                        transition: all .3s ease;
+
+                        &--active {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                &-options {
+                    display: none;
+                    width: 400px;
+                    position: absolute;
+                    list-style: none;
+                    border-radius: 6px;
+                    border: 1px solid #999;
+                    border-top: none;
+
+                    &-item {
+                        color: #999;
+                        font-size: 1.6em;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                        /* 200% */
+                        padding: 0 15px;
+
+                        &:hover {
+                            color: #FFF;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 0px 0px 6px 6px;
+                            border: 1px solid #999;
+                        }
+                    }
+
+                    &--active {
+                        display: block;
+                    }
+                }
+            }
         }
 
         &-download {
@@ -347,19 +419,57 @@ button {
             font-style: normal;
             font-weight: 600;
             line-height: 32px;
-            padding: 0 10px 0 0;
             bottom: 0;
 
             &-purple {
                 color: #C283F3;
-                font-size: 1.6em;
+                font-size: 1.2em;
+                letter-spacing: -2px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 32px;
-                display: inline-block;
-                position: relative;
-                padding: 0;
             }
+        }
+    }
+
+    &-swiper {
+        &-slide {
+            display: block;
+            position: relative;
+
+            &:hover {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 300px;
+                    height: 300px;
+                    right: 8%;
+                    top: 8%;
+                    z-index: 1;
+                    background-image: url('../img/galary_slider/loupe.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: rgba(0, 0, 0, 0.50);
+                }
+                &:active{
+                    &:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        z-index: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #C283F366;
+                    }
+                }
+            }
+        }
+
+        &-img {
+            width: 350px;
+            height: 350px;
         }
     }
 }
@@ -367,7 +477,7 @@ button {
 .catalog {
     display: block;
     position: relative;
-    padding: 35px 0;
+    padding: 81px 0;
     height: 1393px;
 
     &__about {
@@ -385,7 +495,7 @@ button {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            padding: 0 39px 15px 0;
+            padding: 0 28px 15px 0;
         }
 
         &-countries {
@@ -396,18 +506,40 @@ button {
                 padding: 0px 0 8px 0;
 
                 &-item {
-                    padding: 0 50px 0 0;
+                    padding: 0 26px 0 0;
 
                     &-link {
                         text-decoration: none;
 
                         &-img {
+                            display: inline;
                             width: 46px;
                             height: 46px;
                             border-radius: 29px;
+                            border: 2px solid transparent;
+                            margin: 10px;
 
                             &:hover {
                                 box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.70);
+                            }
+
+                            &:active {
+                                border-color: #7943A4;
+                                box-shadow: none;
+
+                            }
+
+                            &--active {
+                                border-color: #7943A4;
+                                border-radius: 50%;
+                                box-shadow: none;
+                                padding: 10px;
+                                margin: 0;
+
+                                &:hover {
+                                    margin: 10px;
+                                    padding: 0;
+                                }
                             }
                         }
                     }
@@ -504,30 +636,40 @@ button {
                     &-label {
                         display: flex;
                         justify-content: space-between;
-                        padding: 42px 0;
+                        padding: 42px 0 31px;
                         font-family: Open Sans;
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: 32px;
-                        /* 133.333% */
                         border-top: 1px solid #CACACA;
 
                         cursor: pointer;
 
                         &::after {
-                            content: "\276F";
-                            width: 1em;
-                            height: 1em;
+                            content: "";
+                            background-image: url('../img/accordion_arrow.png');
+                            margin: -11px 0 0 0;
+                            width: 50px;
+                            height: 50px;
+                            background-size: 100%;
+                            background-position: center center;
+                            background-repeat: no-repeat;
                             text-align: center;
                             transition: all .35s;
-                            transform: rotate(90deg);
+                            border: 1px solid transparent;
+                            border-radius: 50%;
+                            background-color: #ECECEC;
                         }
 
                         &:hover {
                             color: #7943A4;
                             border-top: 1px solid #7943A4;
                             border-bottom: 1px solid #7943A4;
+
+                            &:after {
+                                background-color: #D1A9F0;
+                            }
                         }
                     }
 
@@ -574,13 +716,15 @@ button {
             }
         }
 
-        input:checked {
+        .catalog__info-accordion-list-item-input:checked {
             +.catalog__info-accordion-list-item-label {
                 // background: gray;
                 border-bottom: 1px solid #CACACA;
 
                 &::after {
-                    transform: rotate(-90deg);
+                    transform: rotate(180deg);
+                    border-color: #9D5CD0;
+                    background-color: #D1A9F0;
                 }
 
                 &:hover {
@@ -591,7 +735,7 @@ button {
 
             ~.catalog__info-accordion-list-item-content {
                 max-height: 1000px;
-                padding: 24px 0;
+                padding: 1px 0 24px;
             }
         }
     }
@@ -620,6 +764,9 @@ button {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+        max-height: 752px;
+        overflow: hidden;
+        transition: all 1.5s;
 
         &-item {
             display: block;
@@ -684,7 +831,6 @@ button {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 32px;
-                /* 200% */
             }
 
             &-hide {
@@ -695,9 +841,16 @@ button {
                 margin: 0 50px 50px 0;
             }
 
-            &:nth-child(3n) {
+            &:nth-child(3n),
+            &:last-child {
                 margin-bottom: 50px;
             }
+        }
+
+        &-all {
+
+            transition: all 1.5s;
+            max-height: 1504px;
         }
     }
 
@@ -745,7 +898,6 @@ button {
                 font-size: 1.6em;
                 font-weight: 700;
                 line-height: 32px;
-                /* 200% */
             }
 
             &-list {
@@ -759,7 +911,6 @@ button {
                         font-size: 1.6em;
                         font-weight: 400;
                         line-height: 32px;
-                        /* 200% */
                         padding-left: 24px;
                         cursor: pointer;
 
@@ -767,15 +918,17 @@ button {
                             text-transform: capitalize;
                         }
 
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            top: 15px;
-                            left: 5px;
-                            width: 4px;
-                            height: 4px;
-                            background-color: currentColor;
-                            border-radius: 50%;
+                        &--active {
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 15px;
+                                left: 5px;
+                                width: 4px;
+                                height: 4px;
+                                background-color: currentColor;
+                                border-radius: 50%;
+                            }
                         }
 
                         &:before {
@@ -783,7 +936,6 @@ button {
                             position: absolute;
                             top: 10px;
                             left: 0;
-                            display: inline-block;
                             width: 12px;
                             height: 12px;
                             border: 1px solid currentColor;
@@ -898,7 +1050,7 @@ button {
 .projects {
     display: block;
     position: relative;
-    padding: 81px 0 253px;
+    padding: 81px 0;
 
     &__articles {
         width: 1080px;
@@ -1019,7 +1171,11 @@ button {
                 font-size: 1.6em;
                 font-weight: 400;
                 line-height: 32px;
+
                 /* 200% */
+                &::placeholder {
+                    padding: 0 0 0 23px;
+                }
             }
 
             &-btn {
@@ -1050,6 +1206,25 @@ button {
                 &-whatsapp,
                 &-tg {
                     width: 40px;
+                    height: 40px;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+
+                    &-ico {
+                        &:hover {
+                            opacity: .5;
+                        }
+                    }
+
+                    &:active {
+                        border-color: #7943A4;
+
+                    }
+
+                    &:focus {
+                        background-color: #7943A4;
+                        border: 1px solid;
+                    }
                 }
 
             }

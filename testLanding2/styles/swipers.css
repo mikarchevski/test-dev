@@ -28,11 +28,6 @@
   height: 350px !important;
 }
 
-.gallery-swiper-img {
-  width: 350px;
-  height: 350px;
-}
-
 .gallerySwiper-nav {
   display: flex;
   position: relative;

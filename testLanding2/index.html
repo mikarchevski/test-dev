@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/accordion.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -383,14 +382,29 @@
                         <p class="gallery__desc-filter-title">
                             Фильтр:
                         </p>
+                        <div class="gallery__desc-filter-selector">
+                            <div class="gallery__desc-filter-selector-header">
+                                <span class="gallery__desc-filter-selector-header-current">Живопись</span>
+                                <div class="gallery__desc-filter-selector-header-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                                        <path d="M11 1L6 6L1 1" stroke="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="gallery__desc-filter-selector-options">
+                                <li class="gallery__desc-filter-selector-options-item">Живопись</li>
+                                <li class="gallery__desc-filter-selector-options-item">Рисунок</li>
+                                <li class="gallery__desc-filter-selector-options-item">Скульптура</li>
+                            </ul>
+                        </div>
                     </div>
                     <p class="gallery__desc-download">
                         Вам предоставляется 10 бесплатных скачиваний. Для увеличения
-                        количества скачиваний <span
-                            class="gallery__desc-download gallery__desc-download-purple">авторизуйтесь</span> ,
-                        либо воспользуйтесь лицензией.
+                        количества скачиваний 
+                        <span class="gallery__desc-download-purple">авторизуйтесь, </span>либо воспользуйтесь лицензией.
                     </p>
                 </article>
+                
                 <div class="swiper gallerySwiper">
                     <div class="gallerySwiper-nav">
                         <div class="swiper-button-prev gallery-swiper-button-prev">
@@ -418,81 +432,82 @@
                     </div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/1.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/1.jpg" alt="e" class="gallery-swiper-img" data-path="gallery-1">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/2.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/2.jpg" alt="e" class="gallery-swiper-img" data-path="gallery-2">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/3.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/3.jpg" alt="" class="gallery-swiper-img" data-path="gallery-3">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/4.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/4.jpg" alt="" class="gallery-swiper-img"data-path="gallery-4">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/5.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/5.jpg" alt="ee" class="gallery-swiper-img"data-path="gallery-5">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/6.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/6.jpg" alt="" class="gallery-swiper-img"data-path="gallery-6">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/7.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/7.jpg" alt="" class="gallery-swiper-img"data-path="gallery-7">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/8.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/8.jpg" alt="" class="gallery-swiper-img"data-path="gallery-8">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/9.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/9.jpg" alt="" class="gallery-swiper-img"data-path="gallery-9">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/10.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/10.jpg" alt="" class="gallery-swiper-img"data-path="gallery-10">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/11.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/11.jpg" alt="" class="gallery-swiper-img"data-path="gallery-11">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/12.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/12.jpg" alt="" class="gallery-swiper-img"data-path="gallery-12">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/13.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/13.jpg" alt="" class="gallery-swiper-img"data-path="gallery-13">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/14.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/14.jpg" alt="" class="gallery-swiper-img"data-path="gallery-14">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/15.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/15.jpg" alt="" class="gallery-swiper-img"data-path="gallery-15">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/16.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/16.jpg" alt="" class="gallery-swiper-img"data-path="gallery-16">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/17.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/17.jpg" alt="" class="gallery-swiper-img"data-path="gallery-17">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/18.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/18.jpg" alt="" class="gallery-swiper-img"data-path="gallery-18">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/19.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/19.jpg" alt="" class="gallery-swiper-img"data-path="gallery-19">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/20.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/20.jpg" alt="" class="gallery-swiper-img"data-path="gallery-20">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/21.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/21.jpg" alt="" class="gallery-swiper-img"data-path="gallery-21">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/22.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/22.jpg" alt="" class="gallery-swiper-img"data-path="gallery-22">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/23.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/23.jpg" alt="" class="gallery-swiper-img"data-path="gallery-23">
                         </div>
                         <div class="swiper-slide gallery-swiper-slide">
-                            <img src="img/galary_slider/24.jpg" alt="" class="gallery-swiper-img">
+                            <img src="img/galary_slider/24.jpg" alt="" class="gallery-swiper-img"data-path="gallery-24">
                         </div>
                     </div>
 
                 </div>
             </div>
+        </div>   
     </section>
     <section class="catalog" id="catalog">
         <div class="container">
@@ -502,35 +517,35 @@
                         Каталог
                     </h3>
                     <ul class="catalog__about-countries-list">
-                        <li class="catalog__about-countries-list-item">
-                            <a href="#" class="catalog__about-countries-list-item-link">
+                        <li class="catalog__about-countries-list-item" >
+                            <span href="#" class="catalog__about-countries-list-item-link">
                                 <img src="img/country/fr.png" alt="france"
-                                    class="catalog__about-countries-list-item-link-img">
-                            </a>
+                                    class="catalog__about-countries-list-item-link-img" data-path="country-1">
+                            </span>
                         </li>
-                        <li class="catalog__about-countries-list-item">
-                            <a href="#" class="catalog__about-countries-list-item-link">
+                        <li class="catalog__about-countries-list-item" >
+                            <span href="#" class="catalog__about-countries-list-item-link">
                                 <img src="img/country/dem.png" alt="germany"
-                                    class="catalog__about-countries-list-item-link-img">
-                            </a>
+                                    class="catalog__about-countries-list-item-link-img"data-path="country-2">
+                            </span>
                         </li>
                         <li class="catalog__about-countries-list-item">
-                            <a href="#" class="catalog__about-countries-list-item-link">
+                            <span href="#" class="catalog__about-countries-list-item-link">
                                 <img src="img/country/it.png" alt="italy"
-                                    class="catalog__about-countries-list-item-link-img">
-                            </a>
+                                    class="catalog__about-countries-list-item-link-img catalog__about-countries-list-item-link-img--active test" data-path="country-3">
+                            </span>
                         </li>
                         <li class="catalog__about-countries-list-item">
-                            <a href="#" class="catalog__about-countries-list-item-link">
+                            <span href="#" class="catalog__about-countries-list-item-link">
                                 <img src="img/country/ru.png" alt="Russia"
-                                    class="catalog__about-countries-list-item-link-img">
-                            </a>
+                                    class="catalog__about-countries-list-item-link-img" data-path="country-4">
+                            </span>
                         </li>
                         <li class="catalog__about-countries-list-item">
-                            <a href="#" class="catalog__about-countries-list-item-link">
+                            <span href="#" class="catalog__about-countries-list-item-link">
                                 <img src="img/country/bef.png" alt="belgua"
-                                    class="catalog__about-countries-list-item-link-img">
-                            </a>
+                                    class="catalog__about-countries-list-item-link-img" data-path="country-5">
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -571,7 +586,7 @@
                 <div class="catalog__info-accordion">
                     <ul class="catalog__info-accordion-list">
                         <li class="catalog__info-accordion-list-item">
-                            <input class="catalog__info-accordion-list-item-input" type="radio" id="rd1" name="rd">
+                            <input class="catalog__info-accordion-list-item-input" type="radio" id="rd1" name="rd" checked="checked">
                             <label class="catalog__info-accordion-list-item-label" for="rd1">C 1400 по 1499 гг.</label>
                             <div class="catalog__info-accordion-list-item-content dark-text">
                                 <ul class="catalog__info-accordion-artists-list">
@@ -770,45 +785,50 @@
                     </article>
 
                 </li>
-                <li class="events__list-item events__list-item-hide">
+                <li class="events__list-item">
                     <picture class="events__list-item-logo">
-                        <img src="img/events/event4.jpg" alt="event logo" class="events__list-item-logo-img">
+                        <img src="img/events/event3.jpg" alt="event logo" class="events__list-item-logo-img">
                     </picture>
                     <article class="events__list-item-about">
                         <p class="events__list-item-about-place">
-
+                            Еврейский музей
+                            <br>с 31 марта по 21 апреля
                         </p>
                         <p class="events__list-item-about-name">
-
+                            Выставка «Формация 2020»
                         </p>
                         <p class="events__list-item-about-desc">
-
+                            Идейные соображения высшего порядка, а также современная методология разработки играет
+                            важную роль в формировании глубокомысленных рассуждений.
                         </p>
+                        <a href="#" class="events__list-item-details">
+                            Подробней
+                        </a>
                     </article>
-                    <a href="#" class="events__list-item-details">
-                        Подробней
-                    </a>
+
                 </li>
-                <li class="events__list-item events__list-item-hide">
+                <li class="events__list-item">
                     <picture class="events__list-item-logo">
-                        <img src="img/events/event5.jpg" alt="event logo" class="events__list-item-logo-img">
+                        <img src="img/events/event3.jpg" alt="event logo" class="events__list-item-logo-img">
                     </picture>
                     <article class="events__list-item-about">
                         <p class="events__list-item-about-place">
-
+                            Еврейский музей
+                            <br>с 31 марта по 21 апреля
                         </p>
                         <p class="events__list-item-about-name">
-
+                            Выставка «Формация 2020»
                         </p>
                         <p class="events__list-item-about-desc">
-
+                            Идейные соображения высшего порядка, а также современная методология разработки играет
+                            важную роль в формировании глубокомысленных рассуждений.
                         </p>
+                        <a href="#" class="events__list-item-details">
+                            Подробней
+                        </a>
                     </article>
-                    <a href="#" class="events__list-item-details">
-                        Подробней
-                    </a>
-                </li>
 
+                </li>
             </ul>
             <button class="events__showall">
                 Все события
@@ -1104,7 +1124,7 @@
                     <input type="text" class="contacts__place-form-name" placeholder="Имя*">
                     <input type="number" class="contacts__place-form-phone" placeholder="Телефон*">
                     <button type="submit" class="contacts__place-form-btn">
-                        заказать
+                        Заказать
                     </button>
                 </div>
                 <div class="contacts__place-chats">
@@ -1112,7 +1132,7 @@
                         Связаться в один клик
                     </p>
                     <div class="contacts__place-chats-apps">
-                        <a href="" class="contacts__place-chats-apps-whatsapp">
+                        <a  class="contacts__place-chats-apps-whatsapp">
                             <svg class="contacts__place-chats-apps-whatsapp-ico" viewBox="0 0 60 60"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1123,7 +1143,7 @@
                                     fill="white"></path>
                             </svg>
                         </a>
-                        <a href="" class="contacts__place-chats-apps-tg">
+                        <a  class="contacts__place-chats-apps-tg">
                             <svg class="contacts__place-chats-apps-tg-ico" viewBox="0 0 60 60" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1211,8 +1231,7 @@
         </div>
     </footer>
 
-    <script src="/scripts/accordion.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/sliders.js"></script>
 </body>
