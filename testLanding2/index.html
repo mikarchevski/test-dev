@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Oranienbaum&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,12 +48,45 @@
                 <button class="header__desktop-sigin white-text">войти</button>
             </div>
             <div class="header__mobile">
-                <button class="header__mobile-menu">
-
+                <div class="header__mobile-overlay">
+                    <ul class="header__desktop-menu-list white-text">
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#about" class="header__desktop-menu-list-item-link">о нас</a>
+                        </li>
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#gallery" class="header__desktop-menu-list-item-link">галерея</a>
+                        </li>
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#catalog" class="header__desktop-menu-list-item-link">каталог</a>
+                        </li>
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#events" class="header__desktop-menu-list-item-link">события</a>
+                        </li>
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#publications" class="header__desktop-menu-list-item-link">издания</a>
+                        </li>
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#projects" class="header__desktop-menu-list-item-link">проекты</a>
+                        </li>
+                        <li class="header__desktop-menu-list-item">
+                            <a href="#contacts" class="header__desktop-menu-list-item-link">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__mobile-burger">
+                    <span class="header__mobile-burger-span"></span>
+                    <span class="header__mobile-burger-span"></span>
+                    <span class="header__mobile-burger-span"></span>
                 </button>
-                <img src="/img/logo.png" alt="logo" class="header__desktop-logo">
+                <img src="/img/logo.png" alt="logo" class="header__mobile-logo">
                 <button class="header__mobile-search">
-
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+                        <rect width="9.15446" height="2.28862" 
+                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" 
+                        d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" 
+                        fill="white"/>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -1167,7 +1200,7 @@
             <div class="contacts__maps">
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A78b81a4dcc0b50a428e0a4d6d580268d38fa50bf3fcdc50fd804da9314759e26&amp;source=constructor"
-                    width="1228" height="697" frameborder="0"></iframe>
+                     height="697" frameborder="0" class="contacts__maps-iframe"></iframe>
             </div>
         </div>
     </section>
@@ -1232,7 +1265,7 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="scripts/sliders.js"></script>
 </body>
 

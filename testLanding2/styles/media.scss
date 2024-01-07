@@ -1,0 +1,37 @@
+@media (max-width:1750px){
+    .container{
+        width: 1600px;
+    }
+}
+@media (max-width:1660px){
+    .container{
+        width: 1440px;
+    }
+}
+@media (max-width:1400px){
+    .container{
+        width: 1370px;
+    }
+}
+@media (max-width:1200px){
+    .container{
+        width: 925px;
+    }
+    .top{
+        &__filters{
+            display: none;
+        }
+    }
+    
+}
+@media(max-width:992px){
+    .container{
+        width: 700px;
+    }
+   
+}
+@media (max-width:768px){
+    .container{
+        width: 100%;
+    }
+}

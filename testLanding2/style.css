@@ -12,6 +12,7 @@
     font-style: normal;
     line-height: normal;
     outline: none;
+    box-sizing: border-box;
 }
 
 .white-text{

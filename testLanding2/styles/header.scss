@@ -80,6 +80,101 @@
         position: relative;
         align-items: center;
         justify-content: space-between;
-        
+        &-burger{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            width: 36px;
+            height: 28px;
+            background: no-repeat;
+            border: none;
+            &-span{
+                display: block;
+                position: absolute;
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 3px;
+                transition: .4s ease;
+                rotate:0;
+                &:nth-child(2){
+                    top: 13px;
+                    width: 80%;
+                }
+                &:last-child{
+                    width: 69%;
+                    bottom: 0;
+                }
+                &--active{
+                    &:first-child{
+                        rotate: 45deg;
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:last-child{
+                        width: 100%;
+                        rotate: -45deg;
+                        top: 14px;
+                        left: 5px;
+                        transform-origin: left;
+                    }
+                }
+               
+            }
+           
+            &:active{
+                background: none;
+                border: none;
+            }
+            &:hover{
+                border: none;
+                background: none;
+            }
+            
+        }
+        &-logo{
+            display: block;
+            position: relative;
+            width: 187.6px;
+            height: 42px;
+        }
+        &-search{
+            display: block;
+            position: relative;
+            background: none;
+            border: none;
+        }
+        &-overlay{
+            display: block;
+            position: fixed;
+            padding: 40px 105px;
+            height: 100dvh;
+            width: 0dvw;
+            top: 93px;
+            left: -100%;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1;
+            transition: all .5s ease;
+            &--show{
+                left:0;
+                width: 100dvw;
+            }
+        }
+    }
+
+    @media(max-width:1200px){
+        padding: 29px 0;
+        &__desktop{
+            display: none;
+            &-menu{
+                &-list{
+                    flex-direction: column;
+                }
+            }
+        }
+        &__mobile{
+            display: flex;
+        }
     }
 }

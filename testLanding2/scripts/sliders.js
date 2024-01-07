@@ -1,98 +1,98 @@
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    speed: 2000,
-    effect: "fade",
-    crossFade: true,
-    autoplay: {
-      disableOnInteraction: false,
-    },
-  });
+// var swiper = new Swiper(".mySwiper", {
+//     spaceBetween: 30,
+//     speed: 2000,
+//     effect: "fade",
+//     crossFade: true,
+//     autoplay: {
+//       disableOnInteraction: false,
+//     },
+//   });
   
 
 
-var swiper1 = new Swiper(".gallerySwiper", {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    grid: {
-      rows: 2,
-      fill: "row",
-    },
-    spaceBetween: 49,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' + '/'+
-                '<span class="' + totalClass + '"></span>';
-        },
-      },
-  });
+// var swiper1 = new Swiper(".gallerySwiper", {
+//     slidesPerView: 3,
+//     slidesPerGroup: 3,
+//     grid: {
+//       rows: 2,
+//       fill: "row",
+//     },
+//     spaceBetween: 49,
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         type: "fraction",
+//         renderFraction: function (currentClass, totalClass) {
+//         return '<span class="' + currentClass + '"></span>' + '/'+
+//                 '<span class="' + totalClass + '"></span>';
+//         },
+//       },
+//   });
 
 
-// let elems = document.querySelectorAll('.gallery-swiper-slide');
+// // let elems = document.querySelectorAll('.gallery-swiper-slide');
     
     
-//     for (let elem of elems) {
-//         let attrs = elem.getAttribute('style');
-//         let styles = attrs.split(';');
-//         let ind = styles.indexOf(" margin-top: 49px");
-//         if (ind === 2 || ind === 3){
-//             elem.style.marginTop = "13px";
-//         }
-//     }  
-//  window.onload = function() {
-//     // let elems = document.querySelectorAll('.gallery-swiper-slide');
+// //     for (let elem of elems) {
+// //         let attrs = elem.getAttribute('style');
+// //         let styles = attrs.split(';');
+// //         let ind = styles.indexOf(" margin-top: 49px");
+// //         if (ind === 2 || ind === 3){
+// //             elem.style.marginTop = "13px";
+// //         }
+// //     }  
+// //  window.onload = function() {
+// //     // let elems = document.querySelectorAll('.gallery-swiper-slide');
     
     
-//     // for (let elem of elems) {
-//     //     let attrs = elem.getAttribute('style');
-//     //     let styles = attrs.split(';');
-//     //     let ind = styles.indexOf(" margin-top: 49px");
-//     //     if (ind === 2 || ind === 3){
-//     //         elem.style.marginTop = "13px";
-//     //     }
-//     // }  
-//  }
+// //     // for (let elem of elems) {
+// //     //     let attrs = elem.getAttribute('style');
+// //     //     let styles = attrs.split(';');
+// //     //     let ind = styles.indexOf(" margin-top: 49px");
+// //     //     if (ind === 2 || ind === 3){
+// //     //         elem.style.marginTop = "13px";
+// //     //     }
+// //     // }  
+// //  }
 
-  var swiper = new Swiper(".publicationsSwiper", {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    grid: {
-      rows: 1,
-    },
-    spaceBetween: 50,
-    navigation: {
-        nextEl: ".publications-swiper-button-next",
-        prevEl: ".publications-swiper-button-prev",
-      },
-    pagination: {
-      el: ".publications-swiper-pagination",
-      clickable: true,
-      type: "fraction",
-        renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' + '/'+
-                '<span class="' + totalClass + '"></span>';
-        },
-    },
+//   var swiper = new Swiper(".publicationsSwiper", {
+//     slidesPerView: 3,
+//     slidesPerGroup: 3,
+//     grid: {
+//       rows: 1,
+//     },
+//     spaceBetween: 50,
+//     navigation: {
+//         nextEl: ".publications-swiper-button-next",
+//         prevEl: ".publications-swiper-button-prev",
+//       },
+//     pagination: {
+//       el: ".publications-swiper-pagination",
+//       clickable: true,
+//       type: "fraction",
+//         renderFraction: function (currentClass, totalClass) {
+//         return '<span class="' + currentClass + '"></span>' + '/'+
+//                 '<span class="' + totalClass + '"></span>';
+//         },
+//     },
     
-  });
+//   });
 
-  var swiper = new Swiper(".projectsSwiper", {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    grid: {
-      rows: 1,
-    },
-    spaceBetween: 46,
-    navigation: {
-        nextEl: ".projects-swiper-button-next",
-        prevEl: ".projects-swiper-button-prev",
-      },
-  });
+//   var swiper = new Swiper(".projectsSwiper", {
+//     slidesPerView: 3,
+//     slidesPerGroup: 3,
+//     grid: {
+//       rows: 1,
+//     },
+//     spaceBetween: 46,
+//     navigation: {
+//         nextEl: ".projects-swiper-button-next",
+//         prevEl: ".projects-swiper-button-prev",
+//       },
+//   });
 
 function topMenu(){
   let intervalId;
@@ -265,3 +265,29 @@ function showAllEvents(){
 
 showAllEvents();
 
+function burgerMenu(){
+  let burger =  document.querySelector('.header__mobile-burger')
+  let overlay = document.querySelector('.header__mobile-overlay');
+  burger.addEventListener('click',()=>{
+   overlay.classList.add('header__mobile-overlay--show');
+   document.querySelector('body').classList.add('body--active');
+   document.querySelectorAll('.header__mobile-burger-span').forEach(e =>{
+     e.classList.add('header__mobile-burger-span--active');
+   });
+   window.onclick = f=>{
+     document.querySelectorAll('.header__mobile-burger-span').forEach(e=>{
+       if(f.target == document.querySelector('.header__mobile-burger')){
+         return true;
+       } else {
+         e.classList.remove('header__mobile-burger-span--active')
+         overlay.classList.remove('header__mobile-overlay--show');
+         document.querySelector('body').classList.remove('body--active');
+       }
+     })
+       
+     };
+  
+  });
+ };
+ 
+ burgerMenu();

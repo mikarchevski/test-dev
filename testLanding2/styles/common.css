@@ -1,7 +1,14 @@
 @charset "UTF-8";
 .container {
-  width: 1600px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.body--active {
+  overflow: hidden;
 }
 
 a {
@@ -1008,6 +1015,10 @@ button:active {
 }
 .contacts__maps {
   height: 700px;
+  width: 100%;
+}
+.contacts__maps-iframe {
+  width: 100%;
 }
 
 /*# sourceMappingURL=common.css.map */

@@ -5,6 +5,7 @@
     top: -14% !important;
     z-index: -1;
     width: 100% !important;
+    height: 800px;
 }
 
 
@@ -18,6 +19,9 @@
 
 .top-swiper-img{
     scale: 1.03;
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
 
