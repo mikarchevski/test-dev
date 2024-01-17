@@ -1,0 +1,85 @@
+<table>
+  <tr>
+    <td align="center" bgcolor="#ffffff" style="Margin:0;padding-top:5px;padding-bottom:10px;padding-left:20px;padding-right:20px;background-color:#ffffff">
+      <!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><![endif]-->
+      @{if count(Recipient.Recommendations.Pohozhienaizbrannoe.Take(6))=0}
+      ${1/0}
+      @{else}
+      @{ for row in tableRows(Recipient.Recommendations.Pohozhienaizbrannoe.Take(6), 3) }
+      <!--[if mso]><td style="width:185px" valign="top"><![endif]-->
+      <table cellspacing="0" cellpadding="0" align="center" class="es-left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:center">
+        <tr>
+          @{ set itemTotal = 0 }
+          @{ for cell in row.Cells }
+          @{ if cell.Value != null }
+          <td class="es-m-p0r es-m-p20b" valign="top" align="center" style="padding:5px;Margin:0;width:174px">
+            <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;border-left:1px solid #F1F1F1;border-right:1px solid #F1F1F1;border-top:1px solid #F1F1F1;border-bottom:1px solid #F1F1F1;background-color:#ffffff;border-radius:6px" role="presentation">
+
+              <tr height="220" style="height:220px;min-height:220px;">
+                <td align="center" height="220" style="padding:10px;Margin:0;font-size:0px;height:220px;min-height:220px;">
+                  <a target="_blank" href="${ cell.Value.Url }" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#0093D5;font-size:18px">
+                    <img src="${ResizeImage(cell.Value.PictureUrl, 220,220)}" alt="${ cell.Value.Name }" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
+                  </a>
+                </td>
+              </tr>
+              <tr height="55" style="height:55px;">
+                <td align="left" height="55" valign="top" style="padding:0;Margin:0;padding-left:8px;padding-right:8px;height:45px;">
+                  <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:18px;color:#393430;font-size:14px;font-weight:normal;">
+                    <a href="${ cell.Value.Url }" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#393430;font-size:14px;font-family:Inter,sans-serif;font-weight:normal;">
+                      ${ Truncate(cell.Value.Name, 35)}
+                    </a>
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:0;Margin:0">
+                  <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                    <tr>
+                      <td align="left" style="padding:0;Margin:0">
+                        <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tr>
+                            <td esdev-links-color="#ffffff" class="es-m-txt-l" width="100%" align="left" style="padding:0;Margin:0;padding-top:5px;padding-bottom:5px;padding-left:8px">
+                              <span style="Margin:0;line-height:20px;mso-line-height-rule:exactly;font-family:Inter,sans-serif;font-size:20px;font-style:normal;font-weight:bold;color:#000000">${ formatDecimal(cell.Value.Price, 'N0') } ₽</span>
+                              <span style="Margin:0;line-height:16px;mso-line-height-rule:exactly;font-family:Inter,sans-serif;font-size:14px;font-style:normal;font-weight:normal;color:#696969;background-color: #FFEFD5; text-decoration: line-through; text-decoration-color: #ff0000aa; text-decoration-thickness:2px;">
+                                    @{ if cell.Value.OldPrice != null }
+                                     ${ FormatDecimal (cell.Value.OldPrice,'N0') } ₽
+                                    @{end if}
+                                </span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td align="center" class="es-m-p20t" style="padding:8px;Margin:0">
+                  <span class="es-button-border-2 es-button-border" style="border-style:solid;border-color:#000000;background:none;border-width:0px;display:inline-block;border-radius:20px;width:auto">
+            <a href="${ cell.Value.Url }" class="es-button es-button-1" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-transform: uppercase;color:#000000;font-size:16px;border-style:solid;border-color:#000000;border-width:1px 1px;display:inline-block;background:none;border-radius:5px;font-family:verdana, geneva, sans-serif;font-weight:normal;font-style:normal;line-height:30px;padding-left:30px;padding-right:30px;width:auto;text-align:center">Купить</a>
+          </span>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+          
+          @{ set itemTotal = itemTotal + 1 }
+          @{if itemTotal < 6} <td class="es-hidden" style="padding:0;Margin:0;width:20px">
+    </td>
+    @{end if}
+    @{end if}
+    @{ end for }
+  </tr>
+  <tr class="es-hidden" style="padding:0;Margin:0;height:15px"></tr>
+</table>
+<!--[if mso]></td><![endif]-->
+
+@{ end for }
+@{end if}
+<!--[if mso]></tr></table><![endif]-->
+</td>
+</tr>
+</table>
