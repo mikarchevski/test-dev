@@ -8,20 +8,85 @@
 
 
     <style>
-        ul {
-	padding: 30px;
-	border: 1px solid red;
-}
-li {
-	list-style-type: none;
-	margin-bottom: 20px;
-	border: 1px dashed black;
-}
+        #block:not(.active) {
+            display: none;
+        }
+        .task10-text{
+            display: block;
+        }
+        .task10-text--hide{
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <input>
-    <p></p>
+    <p class="task1">Создание элементов из массива. Добавить данные из массива в новые абзацы и по клику на абцаз добавить !</p>
+    <div class="task1" id="parent"></div>
+    <br>
+    <p class="task2">Добавить Li в список, первый клик по элементу списка добавляет !, второй клик ничего не делает</p>
+    <ul class="task2-list" id="elem"></ul>
+    <br>
+    <p class="task3">
+        Создание таблиц размерностью из инпутов
+    </p>
+    <input class="task3-column"type="number" name="" id="">
+    <input class="task3-row" type="number" name="" id="">
+    <button class="task3-btn">Create table</button>
+    <table class="task3-table" id="table">
+    </table>
+    <br>
+    <p class="task4">Заполнение таблицы из массива</p>
+    <table class="task4-table"></table>
+    <br>
+    <p class="task5">Заполнение таблицы из объектов</p>
+    <table class="task5-table"></table>
+    <br>
+    <p class="task6">Добавление рядов и колонок</p>
+    <table class="task6-table"></table>
+    <button class="task6-btn">Add row</button>
+   
+    <br>
+    <p class="task7">Самоудаление новых элементов</p>
+    <ul class="task7-list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <button class="task7-btn">add item</button>
+    <br>
+    <p class="task8">Ссылка для удаления элемента</p>
+    <div class="task8-parent">
+        <p class="task8-p">text</p>
+        <p class="task8-p">text</p>
+        <p class="task8-p">text</p>
+    </div>
+    <br>
+    <br>
+    <p class="task9">Редактирование элемента</p>
+    <div class="task9-parent">
+        <p class="task9-par">text</p>
+        <p class="task9-par">text</p>
+        <p class="task9-par">text</p>
+        
+    </div>
+
+    <br>
+    <br>
+    <p class="task10">Скрытие элемента</p>
+    <p class="task10-text">Test</p>
+    <button class="task10-btn">Hide</button>
+
+    <br><br>
+    <p class="task11">Работа с DOM через функции</p>
+    <p id="task11-elem1"></p>
+    <p id="task11-elem2"></p>
+    <br><br>
+    <p class="task12">Коллбэк для дом</p>
+    <p class="task12-elem">1</p>
+    <p class="task12-elem">2</p>
+    <p class="task12-elem">3</p>
+    <p class="task12-elem">4</p>
+    <p class="task12-elem">5</p>
     <script src="scripts/test1.js"> </script>
 </body>
 </html>
